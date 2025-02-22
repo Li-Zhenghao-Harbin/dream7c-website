@@ -8,224 +8,208 @@
 		<link rel="stylesheet" href="css/ionicons.min.css">
 		<link rel="shortcut icon" type="image/x-ico" href="images/web_icon.jpg"/>
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	</head>
-	<body>
-		<div class="menu-container">
-			<div class="menu">
-				<ul>
-					<li><a href="index.html"><b style="color:#88abda;">柒幻工作室</b></a>
-					<li><a href="#">项目产品</a>
-						<ul>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/software.png" width="6%" />&nbsp;软件</a>
-								<ul>
-									<li><a href="dream7c GG.html">柒幻 几何精灵&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-									<li><a href="dream7c PC.html">柒幻 千纸鹤&nbsp;<img src="images/menu_ico/windows.png"width="6%" /></a></li>
-									<li><a href="dream7c FR.html">柒幻 霜降&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
-									<li><a href="dream7c DE.html">柒幻 寒露&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
-									<li><a href="dream7c RA.html">柒幻 谷雨&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/command.png" width="6%" />&nbsp;命令</a>
-								<ul>
-									<li><a href="CGFC.html">CGFC</a></li>
-									<li><a href="Solstice.html">Solstice</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/game.png" width="6%" />&nbsp;游戏</a>
-								<ul>
-									<li><a href="dream7c CL3.html">方块竞技3&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-									<li><a href="research/rehabilitation game/index.html" target="_blank">Rehabilitation Game&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/music.png" width="6%" />&nbsp;音乐</a>
-								<ul>
-									<li><a href="music.html">游戏原声专辑</a></li>
-									<!-- <li><a href="#"></a></li> -->
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">关于柒幻</a>
-						<ul>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/about.png" width="6%" />&nbsp;关于</a>
-								<ul>
-									<li><a href="about.html">关于柒幻</a></li>
-									<li><a href="donate.html">捐助柒幻</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/media.png" width="6%" />&nbsp;媒体</a>
-								<ul>
-									<li><a href="news.html">新闻动态</a></li>
-									<li><a href="info.html">公示信息</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/work.png" width="6%" />&nbsp;工作</a>
-								<ul>
-									<li><a href="recruit.html">招贤纳士</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script src="js/megamenu.js"></script>
+		<script src="js/setsidemenu.js"></script>
+	</head>
+	<body>
+		<div class="loading"><div class="pic"></div></div>
+		<div id="main_menu" class="menu-container"></div>
 		<style>
 			.divr{float:left;margin-left:10%;vertical-align:center;}
 			.diva1n{float:left;width:16%;padding:1px;}
 			.diva2n{float:right;width:78%;padding:1px;}
+			.department{width: 45%; margin-left: 5%;padding: 0px;float:left;}
 		</style>
 		<h1 class="tx1">柒幻工作室</h1>
 		<div class="diva1">
 			<div class="dive" id="c1"><p class="tx3v">简介</p></div>
-			<div style="clear:both;">&nbsp;</div>
-			<div class="dive" style="clear:both;" id="c2"><p class="tx3v">产品</p></div>
-			<div style="clear:both;">&nbsp;</div>
-			<div class="dive" style="clear:both;" id="c3"><p class="tx3v">成员</p></div>
-			<div style="clear:both;">&nbsp;</div>
-			<a href="donate.html"><div class="dive"><p class="tx3v">捐助 柒幻 &gt;&gt;</p></div></a>
+			<div class="dive" id="c2"><p class="tx3v">产品</p></div>
+			<div class="dive" id="c3"><p class="tx3v">组织架构</p></div>
+			<div class="dive" id="c4"><p class="tx3v">团队成员</p></div>
+			<!-- <a href="donate.html"><div class="dive"><p class="tx3v">捐助 柒幻 &gt;&gt;</p></div></a> -->
+			<div class="dive" id="c5"><p class="tx3v">捐助 柒幻</p></div>
 		</div>
 		<div class="diva2" id="i1">
 			<p class="tx2v">简介</p>
-			<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;柒幻工作室，由李正浩创建于2013年8月31日，以软件研发为主业。主要产品有《柒幻 几何精灵》、《柒幻 千纸鹤》、《柒幻 霜降》、《柒幻 寒露》等。<br/><br/>
-			<div style="clear:both;"><div style="clear:both;"><div style="float:left;width:30%;font-size:20px;color:#535353;background-color:#ffffff;line-height:25px;text-align:left;">中文名称<br/>外文名称<br/>成立时间<br/>创始人<br/>官网</div><div style="float:left;width:60%;font-size:20px;color:#535353;background-color:#ffffff;line-height:25px;text-align:left;">柒幻工作室<br/>dream7c<br/>2013年8月31日<br/>李正浩<br/><a href="">http://www.dream7c.com/</a></div></div></div>
-			<!-- <div style="clear:both;color:#535353;"><div><div style="float:left;width:33.0333333333333%;font-size:20px;text-align:left;line-height:25px;padding:1px;"><font name="宋体">中文名称<br/>外文名称<br/>成立时间<br/>创始人<br/>首席执行官<br/>官网</font></div><div style="float:left;width:33.0333333333333%;font-size:20px;text-align:left;line-height:25px;padding:1px;"><font name="宋体">柒幻工作室<br/>dream7c<br/>2013年8月31日<br/>李正浩<br/>李正浩<br/>http://www.dream7c.com/</font></div><div style="float:left;width:33.0333333333333%;font-size:20px;text-align:left;line-height:25px;padding:1px;"><font name="宋体">&nbsp;</font></div></div></div> -->
-			<p class="tx2" style="clear:both;"><br/>通过邮箱联系我们&nbsp;&nbsp;dream7c@126.com</p>
+			<p class="tx3">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;柒幻是一家软件工作室，由李正浩创建于2013年8月31日，总部位于中国哈尔滨。
+				<br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;柒幻以软件研发为主业，坚持以创新为核心，提供软件及相关服务，致力于提高人们的工作效率。主要产品有《柒幻 霜降》、《柒幻 寒露》、《柒幻 千纸鹤》、《柒幻 几何精灵》等。<br/><br/>
+			</p>
+			<img src="images/dream7c logo.jpg" width="25%" style="margin-left: 37.5%;">
+			<br/><br/><br/>
+			<div style="clear:both;">
+				<div style="float:left;width:30%;font-size:20px;color:#535353;background-color:#ffffff;text-align:left;">中文名称<br/>英文名称<br/>成立时间<br/>创始人<br/>官网</div>
+				<div style="float:left;width:60%;font-size:20px;color:#535353;background-color:#ffffff;text-align:left;">柒幻工作室<br/>dream7c<br/>2013年8月31日<br/>李正浩<br/><a href="index.html">http://www.dream7c.com/</a></div>
+			</div>
+			<div style="clear:both;"><br/></div>
 		</div>
 		<div class="diva2" style="display:none;" id="i2">
 			<p class="tx2v">产品</p>
-			<a href="dream7c GG.html"><div style="cursor:pointer;">
-				<div class="diva1n">
-					<img src="images/dream7c GG logo.jpg" width="100%" />
-				</div>
-				<div class="diva2n">
-					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;几何精灵</strong>&nbsp;是柒幻于2017年5月推出的提供对于几何图形和函数快速计算方法的软件，由柒幻几何计算器、柒幻函数计算器等整合重构而成。通过使用包含于其中的命令行工具CGFC，可以快速进行计算从而大幅提高效率。<br/>[软件][2016.01.25]</p>
-					<p class="txn">总设计师：李正浩<br/>程序设计：李正浩<br/>平面设计：李正浩&nbsp;&nbsp;陈乐天<br/>过程改善：杨啸&nbsp;&nbsp;吴忌&nbsp;&nbsp;陈乐天&nbsp;&nbsp;刘偌佟</p>
-				</div>
-			</div></a>
-			<div style="clear:both;">&nbsp;</div>
-			<a href="dream7c PC.html"><div style="cursor:pointer;clear:both;">
-				<div class="diva1n">
-					<img src="images/dream7c PC logo.jpg" width="100%" />
-				</div>
-				<div class="diva2n">
-					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;千纸鹤</strong>&nbsp;是柒幻于2018年1月推出的对于文本快速排版的软件，通过使用柒幻&nbsp;千纸鹤可对文本快速编辑并输出为HTML代码或图片。<br/>[软件][2017.12.31]</p>
-					<p class="txn">总设计师：李正浩<br/>程序设计：李正浩<br/>平面设计：李正浩<br/>过程改善：杨啸&nbsp;&nbsp;吴忌&nbsp;&nbsp;康子健</p>
-				</div>
-			</div></a>
-			<div style="clear:both;">&nbsp;</div>
-			<a href="dream7c FR.html"><div style="cursor:pointer;clear:both;">
+			<a href="dream7c-FR.html"><div style="cursor:pointer;">
 				<div class="diva1n">
 					<img src="images/dream7c FR logo.jpg" width="100%" />
 				</div>
 				<div class="diva2n">
 					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;霜降</strong>&nbsp;是柒幻于2021年1月推出的一款数据处理软件，继承并拓展了&nbsp;柒幻&nbsp;曼陀罗华&nbsp;的全部功能，同时支持Solstice语言以对数据进行快速处理。于2022年3月推出Android版本。<br/>[软件][2021.01.24]</p>
-					<p class="txn">总设计师：李正浩<br/>程序设计：李正浩&nbsp;&nbsp;康子健<br/>平面设计：李正浩&nbsp;&nbsp;陈乐天<br/>过程改善：陈乐天&nbsp;&nbsp;吴忌</p>
 				</div>
 			</div></a>
-			<a href="dream7c DE.html"><div style="cursor:pointer;clear:both;">
+			<a href="dream7c-DE.html"><div style="cursor:pointer;clear:both;">
 				<div class="diva1n">
 					<img src="images/dream7c DE logo.jpg" width="100%" />
 				</div>
 				<div class="diva2n">
 					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;寒露</strong>&nbsp;是柒幻于2021年9月推出的一款自定义题库软件，支持自定义题干和答案，提高对于知识的复习效率。于2022年2月推出Android版本。<br/>[软件][2021.08.23]</p>
-					<p class="txn">总设计师：李正浩<br/>程序设计：李正浩<br/>平面设计：李正浩&nbsp;&nbsp;陈乐天<br/>过程改善：刘偌佟&nbsp;&nbsp;吴忌</p>
 				</div>
 			</div></a>
 			<div style="clear:both;">&nbsp;</div>
-			<a href="dream7c RA.html"><div style="cursor:pointer;clear:both;">
+			<a href="dream7c-RA.html"><div style="cursor:pointer;clear:both;">
 				<div class="diva1n">
 					<img src="images/dream7c RA logo.jpg" width="100%" />
 				</div>
 				<div class="diva2n">
 					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;谷雨</strong>&nbsp;是柒幻于2022年10月推出的一款公共花费金额平摊计算软件，支持录入群组并自动结算，提高对于账单的计算效率。<br/>[软件][2022.10.08]</p>
-					<p class="txn">总设计师：李正浩<br/>程序设计：李正浩<br/>平面设计：李正浩<br/>过程改善：康子健</p>
 				</div>
 			</div></a>
 			<div style="clear:both;">&nbsp;</div>
-			<a href="dream7c CL3.html"><div style="cursor:pointer;clear:both;">
+			<a href="dream7c-PC.html"><div style="cursor:pointer;clear:both;">
+				<div class="diva1n">
+					<img src="images/dream7c PC logo.jpg" width="100%" />
+				</div>
+				<div class="diva2n">
+					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;千纸鹤</strong>&nbsp;是柒幻于2018年1月推出的对于文本快速排版的软件，通过使用柒幻&nbsp;千纸鹤可对文本快速编辑并输出为HTML代码或图片。<br/>[软件][2017.12.31]</p>
+				</div>
+			</div></a>
+			<div style="clear:both;">&nbsp;</div>
+			<a href="dream7c-GG.html"><div style="cursor:pointer;clear:both;"">
+				<div class="diva1n">
+					<img src="images/dream7c GG logo.jpg" width="100%" />
+				</div>
+				<div class="diva2n">
+					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">柒幻&nbsp;几何精灵</strong>&nbsp;是柒幻于2017年5月推出的提供对于几何图形和函数快速计算方法的软件，由柒幻几何计算器、柒幻函数计算器等整合重构而成。通过使用包含于其中的命令行工具CGFC，可以快速进行计算从而大幅提高效率。<br/>[软件][2016.01.25]</p>
+				</div>
+			</div></a>
+			<div style="clear:both;">&nbsp;</div>
+			<a href="dream7c-CL3.html"><div style="cursor:pointer;clear:both;">
 				<div class="diva1n">
 					<img src="images/dream7c CL3 logo.jpg" width="100%" />
 				</div>
 				<div class="diva2n">
 					<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color:#88abda">方块竞技3</strong>&nbsp;是柒幻的首款游戏“方块竞技”系列的续作，在初代基础上添加更多卡牌和技能以及全新的模式,玩家可以利用随机的技能或卡牌和一些技巧或战术将对手从平台上击落从而获得胜利。<br/>[游戏][双人][本地][2018.02.11]</p>
-					<p class="txn">总设计师：李正浩<br/>程序设计：李正浩<br/>平面设计：李正浩<br/>音乐设计：刘偌佟<br/>过程改善：刘偌佟&nbsp;&nbsp;杨啸&nbsp;&nbsp;康子健&nbsp;&nbsp;吴忌</p>
 				</div>
 			</div></a>
 		</div>
 		<div class="diva2" style="display:none;" id="i3">
+			<p class="tx2v">组织架构</p>
+			<div class="department">
+				<p class="tx2v">软件工程部</p><hr/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责软件和游戏的架构、界面设计及代码编写，同时保障官网的稳定运行。</p>
+			</div>
+			<div class="department">
+				<p class="tx2v">数字媒体部</p><hr/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责图标和音乐的设计及制作，同时参与软件和游戏的测试。</p>
+			</div>
+		</div>
+		<div class="diva2" style="display:none;" id="i4">
 			<p class="tx2v">团队成员</p>
 			<div>
 				<div class="diva1n tx2">
 					李正浩
 				</div>
 				<div class="diva2n tx3">
-					柒幻创始人，毕业于东北大学，曾任柒幻首席执行官（2013.08-2023.06）。《柒幻 几何精灵》、《柒幻 千纸鹤》、《柒幻 霜降》、《柒幻 寒露》、《柒幻 谷雨》、柒幻官网、《方块竞技》系列、《柒幻 霜降 Android》、《柒幻 寒露 Android》等项目总设计师。
+					柒幻创始人，曾任柒幻首席执行官（2013.08-2023.06）。《柒幻 霜降》、《柒幻 寒露》、《柒幻 谷雨》、《柒幻 麦芒》、《柒幻 千纸鹤》、《柒幻 几何精灵》、柒幻官网、《方块竞技》系列、《柒幻 霜降 Android》、《柒幻 寒露 Android》等项目总设计师。
+					<br/><br/>
+					李正浩于2013年8月创立柒幻，曾于东北大学获得学士学位。
 				</div>
 			</div>
-			<div style="clear:both">
-				<br/>
+			<div style="clear:both;">
+				<br/><br/>
 				<div class="diva1n tx2">
 					康子健
 				</div>
 				<div class="diva2n tx3">
-					首席执行官（2023.07至今），毕业于上海交通大学。曾获CCF NOI 2018银牌、CCF NOIP 2017/2018一等奖。参与《柒幻 霜降》、《柒幻 霜降 Android》等项目部分程序设计。
+					首席执行官（2023.07至今），软件工程部总负责人。曾获CCF NOI 2018银牌、CCF NOIP 2017/2018一等奖。参与《柒幻 霜降》、《柒幻 霜降 Android》等项目部分程序设计。
+					<br/><br/>
+					康子健于2013年11月加入柒幻，曾于上海交通大学获得学士学位。
 				</div>
 			</div>
 			<div style="clear:both">
-				<br/>
+				<br/><br/>
 				<div class="diva1n tx2">
 					陈乐天
 				</div>
 				<div class="diva2n tx3">
-					平面设计师，就读于北京航空航天大学。参与《柒幻 几何精灵》、《柒幻 霜降》等项目部分平面美术设计。
+					平面设计师，数字媒体部总负责人。参与《柒幻 几何精灵》、《柒幻 霜降》等项目部分平面美术设计。
+					<br/><br/>
+					陈乐天于2019年6月加入柒幻，曾于北京航空航天大学获得学士学位，硕士就读于北京航空航天大学。
 				</div>
 			</div>
 			<div style="clear:both">
-				<br/>
+				<br/><br/>
 				<div class="diva1n tx2">
 					刘偌佟
 				</div>
 				<div class="diva2n tx3">
-					平面设计师，毕业于北京师范大学珠海分校。《方块竞技》系列音乐总设计师。参与柒幻官网等项目部分平面美术设计。
+					平面设计师，任职于数字媒体部。《方块竞技》系列音乐总设计师。参与柒幻官网等项目部分图标设计。
+					<br/><br/>
+					刘偌佟于2018年7月加入柒幻，曾于北京师范大学获得学士学位。
 				</div>
 			</div>
 			<div style="clear:both">
-				<br/>
+				<br/><br/>
 				<div class="diva1n tx2">
 					吴忌
 				</div>
 				<div class="diva2n tx3">
-					音乐设计师，毕业于黑龙江大学。
+					音乐设计师，任职于数字媒体部。
+					<br/><br/>
+					吴忌于2013年11月加入柒幻，曾于黑龙江大学获得学士学位，硕士就读于马来亚大学。
+				</div>
+			</div>
+			<div style="clear:both">
+				<br/><br/>
+				<div class="diva1n tx2">
+					杨啸
+				</div>
+				<div class="diva2n tx3">
+					软件工程师，任职于软件工程部。
+					<br/><br/>
+					杨啸于2017年8月加入柒幻，曾于长安大学获得学士学位。
 				</div>
 			</div>
 			<div style="clear:both;">&nbsp;</div>
 		</div>
-		<script>
-			window.onload=function(){
-				var btn=new Array(document.getElementById("i1"),document.getElementById("i2"),document.getElementById("i3"));
-				var rbtn=function(x){
-					for(i=0;i<btn.length;i++){
-						btn[i].style.display='none';
-					}
-					btn[x].style.display='block';
-				}
-				document.getElementById("c1").onclick=function(){
-					rbtn(0);
-				}
-				document.getElementById("c2").onclick=function(){
-					rbtn(1);
-				}
-				document.getElementById("c3").onclick=function(){
-					rbtn(2);
-				}
-			}
-		</script>
-		<div style="clear:both;">&nbsp;</div>
-		<div style="background-color:#e9e9e9;font-size:18px;color:#535353;clear:both;overflow:hidden;">			<div style="margin:0 auto;width:78%;padding:1% 1% 2% 1%;">
-<div style="clear:both;line-height:225%;"> <br/> <div style="float:left;width:24%;"> <p style="color:#88abda;clear:both;font-size:22px;"><br/>软件<br/><br/></p> <a href="dream7c GG.html">柒幻 几何精灵</a><br/> <a href="dream7c PC.html">柒幻 千纸鹤</a><br/> <a href="dream7c FR.html">柒幻 霜降</a><br/> <a href="dream7c DE.html">柒幻 寒露</a><br/> <a href="dream7c RA.html">柒幻 谷雨</a> </div> <div style="float:left;width:24%;"> <p style="color:#88abda;clear:both;font-size:22px;"><br/>命令<br/><br/></p> <a href="CGFC.html">CGFC</a><br/> <a href="Solstice.html">Solstice</a> </div> <div style="float:left;width:24%;"> <p style="color:#88abda;clear:both;font-size:22px;"><br/>游戏&音乐<br/><br/></p> <a href="dream7c CL3.html">方块竞技3</a><br/> <a href="research/rehabilitation game/index.html">Rehabilitation Game</a><br/> <a href="music.html">游戏原声专辑</a><br/> </div> <div style="float:left;width:24%;"> <p style="color:#88abda;clear:both;font-size:22px;"><br/>工作室<br/><br/></p> <a href="about.html">关于柒幻</a><br/> <a href="news.html">新闻动态</a><br/> <a href="recruit.html">招贤纳士</a><br/> <a href="donate.html">捐助柒幻</a> </div> <div style="clear:both;"> <br/><br/> <b>&copy; 2013-2023 <strong style="color:#88abda;">柒幻工作室 &bull; 十周年</strong></b> <br/><br/> </div> </div>
+		<div class="diva2" style="display:none;" id="i5">
+			<p class="tx2v">捐助 柒幻</p>
+			<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感谢您对于柒幻的支持，如果您对于柒幻的产品与服务表示认同并认为有所帮助，我们愿意接受来自各方面的捐款。</p>
+			<div class="tx3">
+				<!-- <div style="float:left;width:42%;">
+					<p class="tx2v">通过支付宝</p>
+					<img src="images/pay1.jpg" width="100%"/>
+				</div> -->
+				<div style="float:left;width:42%;margin-left:5%;">
+					<p class="tx2v">通过微信扫码</p>
+					<img src="images/pay2.png" width="100%"/>
+				</div>
+				<div style="float:left;width:42%;margin-left:5%;">
+					<br/>
+					您的捐款将被用于：<br/><br/>
+					1、产品维护与项目研发<br/>2、保障官网的稳定运行<br/>3、奖励和培训开发人员
+				</div>
 			</div>
 		</div>
+		<div id="footer"></div>
 	</body>
+	<script src="js/setcommon.js"></script>
 </html>
+<script>
+	window.onload = function() {
+		const queryString = window.location.search.substring(1);
+		const queryParams = new URLSearchParams(queryString);
+		const paramValue = queryParams.get('page');
+		if (paramValue == 'donate') {
+			document.getElementById("c5").click();
+		}
+	}
+</script>

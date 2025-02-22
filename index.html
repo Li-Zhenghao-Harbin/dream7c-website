@@ -14,86 +14,6 @@
 		<script type="text/javascript" src="js/superslide.2.1.js"></script>
 		<script src="js/megamenu.js"></script>
 		<style>
-			.loading{width:100%;height:100%;position:fixed;top:0;left:0;z-index:100;background:#ffffff;opacity:0.5;}
-			.loading .pic{width:64px;height:64px;background:url(images/loading.gif);position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
-		</style>
-	</head>
-	<body>
-		<div class="loading">
-			<div class="pic"></div>
-		</div>
-		<script>
-			document.onreadystatechange=function(){
-				if(document.readyState=="complete"){
-					$(".loading").fadeOut();
-				}
-			}
-		</script>
-		<div class="menu-container">
-			<div class="menu">
-				<ul>
-					<li><a href="index.html"><b style="color:#88abda;">柒幻工作室</b></a>
-					<li><a href="#">项目产品</a>
-						<ul>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/software.png" width="6%" />&nbsp;软件</a>
-								<ul>
-									<li><a href="dream7c GG.html">柒幻 几何精灵&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-									<li><a href="dream7c PC.html">柒幻 千纸鹤&nbsp;<img src="images/menu_ico/windows.png"width="6%" /></a></li>
-									<li><a href="dream7c FR.html">柒幻 霜降&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
-									<li><a href="dream7c DE.html">柒幻 寒露&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
-									<li><a href="dream7c RA.html">柒幻 谷雨&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/command.png" width="6%" />&nbsp;命令</a>
-								<ul>
-									<li><a href="CGFC.html">CGFC</a></li>
-									<li><a href="Solstice.html">Solstice</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/game.png" width="6%" />&nbsp;游戏</a>
-								<ul>
-									<li><a href="dream7c CL3.html">方块竞技3&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-									<li><a href="research/rehabilitation game/index.html" target="_blank">Rehabilitation Game&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/music.png" width="6%" />&nbsp;音乐</a>
-								<ul>
-									<li><a href="music.html">游戏原声专辑</a></li>
-									<!-- <li><a href="#"></a></li> -->
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">关于柒幻</a>
-						<ul>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/about.png" width="6%" />&nbsp;关于</a>
-								<ul>
-									<li><a href="about.html">关于柒幻</a></li>
-									<li><a href="donate.html">捐助柒幻</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/media.png" width="6%" />&nbsp;媒体</a>
-								<ul>
-									<li><a href="news.html">新闻动态</a></li>
-									<li><a href="info.html">公示信息</a></li>
-								</ul>
-							</li>
-							<li><a href="#" style="color:#88abda;"><img src="images/menu_ico/work.png" width="6%" />&nbsp;工作</a>
-								<ul>
-									<li><a href="recruit.html">招贤纳士</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<br/>
-		<!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="js/superslide.2.1.js"></script>
-		<script src="js/megamenu.js"></script> -->
-		<style type="text/css">		
-			*{margin:0;padding:0;list-style:none;}
 			/* fullSlide */
 			.fullSlide{width:100%;position:relative;height:450px;}
 			.fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
@@ -106,18 +26,25 @@
 			.fullSlide .hd ul .on{background:Black;}
 			.fullSlide .prev,.fullSlide .next{display:block;position:absolute;z-index:1;top:50%;margin-top:-30px;left:15%;z-index:1;width:40px;height:60px;background:url(images/slider-arrow.png) -126px -137px #000 no-repeat;cursor:pointer;filter:alpha(opacity=50);opacity:0.5;display:none;}
 			.fullSlide .next{left:auto;right:15%;background-position:-6px -137px;}
-			.ico{width:18%;float:left;margin-left:5.5%;}
+			.ico{width:20%;float:left;margin-left:10%;}
+			.ico .tx3{ margin: 0;}
+			.ico .tx1{ margin: 0;}
 			.anni {width: 26%;margin-left: 5.5%;float: left;text-align: center;padding: 0px;margin-top: 3%;}
 		</style>
+	</head>
+	<body>
+		<div class="loading"><div class="pic"></div></div>
+		<div id="main_menu" class="menu-container"></div>
+		<br/>
 		<div class="fullSlide">
 			<div class="bd">
 				<ul>
-					<li><a href="dream7c PC.html"><img src="images/dream7c PC ready.jpg" /></a></li>
-					<li><a href="dream7c FR.html"><img src="images/dream7c FR ready.jpg" /></a></li>
-					<li><a href="dream7c RA.html"><img src="images/dream7c RA ready.jpg" /></a></li>
-					<li><a href="dream7c FR.html"><img src="images/dream7c FR Android ready.jpg" /></a></li>
-					<li><a href="dream7c DE.html"><img src="images/dream7c DE Android ready.jpg" /></a></li>
-					<li><a href="dream7c DE.html"><img src="images/dream7c DE ready.jpg" /></a></li>
+					<li><a href="dream7c-PC.html"><img src="images/dream7c PC ready.jpg" /></a></li>
+					<li><a href="dream7c-FR.html"><img src="images/dream7c FR ready.jpg" /></a></li>
+					<li><a href="dream7c-RA.html"><img src="images/dream7c RA ready.jpg" /></a></li>
+					<li><a href="dream7c-FR.html"><img src="images/dream7c FR Android ready.jpg" /></a></li>
+					<li><a href="dream7c-DE.html"><img src="images/dream7c DE Android ready.jpg" /></a></li>
+					<li><a href="dream7c-DE.html"><img src="images/dream7c DE ready.jpg" /></a></li>
 				</ul>
 			</div>
 			<div class="hd"><ul></ul></div>
@@ -132,31 +59,66 @@
 		</div>
 		<div style="clear:both;"><br/><br/></div>
 		<div>
-			<a href="dream7c GG.html"><div class="ico" style="margin-left:5.5%;"><img src="images/dream7c GG logo.jpg" width ="100%" /><br/><p class="tx1">几何精灵<br/><img src="images/menu_ico/windows.png" width="15%" /></p><br/><p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于几何图形和函数的计算效率</p></div></a>
-			<a href="dream7c PC.html"><div class="ico"><img src="images/dream7c PC logo.jpg" width ="100%" /><br/><p class="tx1">千纸鹤<br/><img src="images/menu_ico/windows.png" width="15%" /></p><br/><p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于网页和图片的制作效率</p></div></a>
-			<a href="dream7c FR.html"><div class="ico"><img src="images/dream7c FR logo.jpg" width ="100%" /><br/><p class="tx1">霜降<br/><img src="images/menu_ico/windows.png" width="15%" /><img src="images/menu_ico/android.png" width="15%" /></p><br/><p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于文本和数据的处理效率</p></div></a>
-			<a href="dream7c DE.html"><div class="ico"><img src="images/dream7c DE logo.jpg" width ="100%" /><br/><p class="tx1">寒露<br/><img src="images/menu_ico/windows.png" width="15%" /><img src="images/menu_ico/android.png" width="15%" /></p><br/><p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于知识的复习效率</p></div></a>
+			<a href="dream7c-FR.html"><div class="ico">
+				<img src="images/dream7c FR logo.jpg" width ="100%" /><br/>
+				<p class="tx1">霜降<br/><img src="images/menu_ico/windows.png" width="15%" /><img src="images/menu_ico/android.png" width="15%" /></p><br/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于文本和数据的处理效率</p><br/>
+				
+			</div></a>
+			<a href="dream7c-DE.html"><div class="ico">
+				<img src="images/dream7c DE logo.jpg" width ="100%" /><br/>
+				<p class="tx1">寒露<br/><img src="images/menu_ico/windows.png" width="15%" /><img src="images/menu_ico/android.png" width="15%" /></p><br/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于知识的复习效率</p><br/>
+				
+			</div></a>
+			<a href="dream7c-PC.html"><div class="ico">
+				<img src="images/dream7c PC logo.jpg" width ="100%" /><br/>
+				<p class="tx1">千纸鹤<br/><img src="images/menu_ico/windows.png" width="15%" /></p><br/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于网页和图片的制作效率</p><br/>
+				
+			</div></a>
+			<div style="clear:both;">
+				<a href="dream7c-FR.html"><img class="ico" src="images/dream7c FR/dream7c FR ex2.png" width="100%" /></a>
+				<a href="dream7c-DE.html"><img class="ico" src="images/dream7c DE/dream7c DE ex2.png" width="100%" /></a>
+				<a href="dream7c-PC.html"><img class="ico" src="images/dream7c PC/dream7c PC ex1.png" width="100%" /></a>
+			</div>
 		</div>
-		<div style="margin:0 auto;clear:both;">
-			<br/>
-			<a href="dream7c GG.html"><div class="ico" style="margin-left:5.5%;"><img src="images/dream7c GG/dream7c GG 2020 ex3.png" width="100%" /></div></a>
-			<a href="dream7c PC.html"><div class="ico"><img src="images/dream7c PC/dream7c PC ex1.png" width="100%" /></div></a>
-			<a href="dream7c FR.html"><div class="ico"><img src="images/dream7c FR/dream7c FR ex2.png" width="100%" /></div></a>
-			<a href="dream7c DE.html"><div class="ico"><img src="images/dream7c DE/dream7c DE ex2.png" width="100%" /></div></a>
+		<div style="clear:both;">
+			<br/><br/><br/><br/>
+			<a href="dream7c-RA.html"><div class="ico">
+				<img src="images/dream7c RA logo.jpg" width ="100%" /><br/>
+				<p class="tx1">谷雨<br/><img src="images/menu_ico/windows.png" width="15%" /></p><br/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于公摊账单的计算效率</p><br/>
+			</div></a>
+			<a href="dream7c-GG.html"><div class="ico">
+				<img src="images/dream7c GG logo.jpg" width ="100%" /><br/>
+				<p class="tx1">几何精灵<br/><img src="images/menu_ico/windows.png" width="15%" /></p><br/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高对于几何图形和函数的计算效率</p><br/>
+			</div></a>
+			<a href="dream7c-CL3.html"><div class="ico">
+				<img src="images/dream7c CL3 logo.jpg" width ="100%" /><br/>
+				<p class="tx1">方块竞技3<br/><img src="images/menu_ico/windows.png" width="15%" /></p><br/>
+				<p class="tx3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;包含多种模式的双人休闲游戏</p><br/>
+			</div></a>
+			<div style="clear:both;">
+				<a href="dream7c-RA.html"><img class="ico" src="images/dream7c RA/dream7c RA ex2.png" width="100%" /></a>
+				<a href="dream7c-GG.html"><img class="ico" src="images/dream7c GG/dream7c GG 2020 ex3.png" width="100%" /></a>
+				<a href="dream7c-CL3.html"><img class="ico" src="images/dream7c CL3/dream7c CL3-1 ex.jpg" width="100%" /></a>
+			</div>
 		</div>
 		<div style="clear:both"><br/><br/></div>
 		<div style="float:left;padding:2%;margin-left:2%;width:47%;background-color:#f5f5f5;">
-			<p class="tx2">加入柒幻</p><br/>
+			<p class="tx2">加入柒幻</p>
 			<p class="tx3">柒幻正在等待优秀人才的加入，不断改进产品、解决问题和创新<br/><br/><u><a href="recruit.html">加入柒幻&gt;&gt;</a></u></p>
 		</div>
 		<div style="float:left;padding:2%;margin-left:2%;width:47%;background-color:#f5f5f5;">
-			<p class="tx2">捐助柒幻</p><br/>
-			<p class="tx3">为柒幻捐款，推进产品研发、保障官网稳定运行和激励开发人员<br/><br/><u><a href="donate.html">捐助柒幻&gt;&gt;</a></u></p>
+			<p class="tx2">捐助柒幻</p>
+			<p class="tx3">为柒幻捐款，推进产品研发、保障官网稳定运行和激励开发人员<br/><br/><u><a href="about.html?page=donate">捐助柒幻&gt;&gt;</a></u></p>
 		</div>
 		<div style="clear:both;">
 			<br/><br/><br/>
 			<div style="background-color:#88abda;opacity: 90%;">
-				<div style="margin:0 auto;float:center;text-align:center;font-size:20px;color:#88abda;width:35%;background-color:white;">
+				<div style="margin:0 auto;float:center;text-align:center;font-size:15px;color:#88abda;width:35%;background-color:white;">
 					<br/>
 					<p class="tx1">柒幻 &bull; 十周年</p>
 					<br/>
@@ -200,66 +162,29 @@
 			</div>
 		</div>
 		<div style="clear:both;">&nbsp;</div>
-		<script type="text/javascript">
-			$(".fullSlide").hover(function(){
-				$(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
-			},
-			function(){
-				$(this).find(".prev,.next").fadeOut()
-			});
-			$(".fullSlide").slide({
-				titCell: ".hd ul",
-				mainCell: ".bd ul",
-				effect: "fold",
-				autoPlay: true,
-				autoPage: true,
-				trigger: "click",
-				startFun: function(i) {
-					var curLi = jQuery(".fullSlide .bd li").eq(i);
-					if ( !! curLi.attr("_src")) {
-						curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
-					}
-				}
-			});
-		</script>
-		<div style="clear:both;">&nbsp;</div>
-		<div style="background-color:#e9e9e9;font-size:18px;color:#535353;clear:both;overflow:hidden;">			
-			<div style="margin:0 auto;width:78%;padding:1% 1% 2% 1%;">
-				<div style="clear:both;line-height:225%;">
-					<br/>
-					<div style="float:left;width:24%;">
-						<p style="color:#88abda;clear:both;font-size:22px;"><br/>软件<br/><br/></p>
-						<a href="dream7c GG.html">柒幻 几何精灵</a><br/>
-						<a href="dream7c PC.html">柒幻 千纸鹤</a><br/>
-						<a href="dream7c FR.html">柒幻 霜降</a><br/>
-						<a href="dream7c DE.html">柒幻 寒露</a><br/>
-						<a href="dream7c RA.html">柒幻 谷雨</a>
-					</div>
-					<div style="float:left;width:24%;">
-						<p style="color:#88abda;clear:both;font-size:22px;"><br/>命令<br/><br/></p>
-						<a href="CGFC.html">CGFC</a><br/>
-						<a href="Solstice.html">Solstice</a>
-					</div>
-					<div style="float:left;width:24%;">
-						<p style="color:#88abda;clear:both;font-size:22px;"><br/>游戏&音乐<br/><br/></p>
-						<a href="dream7c CL3.html">方块竞技3</a><br/>
-						<a href="research/rehabilitation game/index.html" target="_blank">Rehabilitation Game</a><br/>
-						<a href="music.html">游戏原声专辑</a><br/>
-					</div>
-					<div style="float:left;width:24%;">
-						<p style="color:#88abda;clear:both;font-size:22px;"><br/>工作室<br/><br/></p>
-						<a href="about.html">关于柒幻</a><br/>
-						<a href="news.html">新闻动态</a><br/>
-						<a href="recruit.html">招贤纳士</a><br/>
-						<a href="donate.html">捐助柒幻</a>
-					</div>
-					<div style="clear:both;">
-						<br/><br/>
-						<b>&copy; 2013-2023 <strong style="color:#88abda;">柒幻工作室 &bull; 十周年</strong></b>
-						<br/><br/>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div id="footer"></div>
 	</body>
+	<script src="js/setcommon.js"></script>
 </html>
+<script>
+	$(".fullSlide").hover(function(){
+		$(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
+	},
+	function(){
+		$(this).find(".prev,.next").fadeOut()
+	});
+	$(".fullSlide").slide({
+		titCell: ".hd ul",
+		mainCell: ".bd ul",
+		effect: "fold",
+		autoPlay: true,
+		autoPage: true,
+		trigger: "click",
+		startFun: function(i) {
+			var curLi = jQuery(".fullSlide .bd li").eq(i);
+			if ( !! curLi.attr("_src")) {
+				curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+			}
+		}
+	});
+</script>

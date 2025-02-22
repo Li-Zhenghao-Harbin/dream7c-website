@@ -1,4 +1,12 @@
 /*global $ */
+
+// 加载完成后隐藏进度条
+document.onreadystatechange=function(){
+    if(document.readyState=="complete"){
+        $(".loading").fadeOut();
+    }
+}
+
 $(document).ready(function () {
 
     "use strict";
