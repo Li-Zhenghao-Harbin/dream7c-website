@@ -17,6 +17,7 @@ function setMainMenu() {
                             <ul>
                                 <li><a href="dream7c-FR.html">柒幻 霜降&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
                                 <li><a href="dream7c-DE.html">柒幻 寒露&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
+                                <li><a href="dream7c-DV.html">柒幻 麦芒&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
                                 <li><a href="dream7c-RA.html">柒幻 谷雨&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
                                 <li><a href="dream7c-PC.html">柒幻 千纸鹤&nbsp;<img src="images/menu_ico/windows.png"width="6%" /></a></li>
                                 <li><a href="dream7c-GG.html">柒幻 几何精灵&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
@@ -177,6 +178,19 @@ function setSubMenu() {
                 </div>
             </div>
         `;
+    } else if (key == "DV") {
+        html =
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href="dream7c-DV.html"><b style="color:white;">柒幻 麦芒</b></a></li>
+                        <li><a href="dream7c-DV-download.html">下载</a></li>
+                        <li><a href="dream7c-DV-about.html">关于 麦芒</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
     }
     menu.innerHTML = html;
 }
@@ -192,6 +206,7 @@ function setFooter() {
 						<p style="color:#88abda;clear:both;font-size:22px;">软件<br/></p>
 						<a href="dream7c-FR.html">柒幻 霜降</a><br/>
 						<a href="dream7c-DE.html">柒幻 寒露</a><br/>
+						<a href="dream7c-DV.html">柒幻 麦芒</a><br/>
 						<a href="dream7c-RA.html">柒幻 谷雨</a><br/>
 						<a href="dream7c-PC.html">柒幻 千纸鹤</a><br/>
 						<a href="dream7c-GG.html">柒幻 几何精灵</a>
@@ -218,7 +233,7 @@ function setFooter() {
 						<br/>
 						<img src="images/dream7c logo.jpg" style="max-width: 80px;max-height: 80px;float:left;">
 						<div style="float:left;margin-left: 5%;" class="txn">
-							Copyright &copy; 2025 <strong style="color:#88abda;">柒幻工作室 dream7c</strong> 版权所有
+							Copyright &copy; 2026 <strong style="color:#88abda;">柒幻工作室 dream7c</strong> 版权所有
 						</div>
 						<br style="clear:both;"/><br/>
 					</div>
