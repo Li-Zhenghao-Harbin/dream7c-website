@@ -25,14 +25,20 @@ function setMainMenu() {
                         </li>
                         <li><a href="#" style="color:#88abda;"><img src="images/menu_ico/command.png" width="6%" />&nbsp;命令</a>
                             <ul>
-                                <li><a href="CGFC.html">CGFC</a></li>
                                 <li><a href="Solstice.html">Solstice</a></li>
+                                <li><a href="CGFC.html">CGFC</a></li>
                             </ul>
                         </li>
                         <li><a href="#" style="color:#88abda;"><img src="images/menu_ico/game.png" width="6%" />&nbsp;游戏</a>
                             <ul>
                                 <li><a href="dream7c-CL3.html">方块竞技3&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
                                 <li><a href="research/rehabilitation game/index.html" target="_blank">Rehabilitation Game&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" style="color:#88abda;"><img src="images/menu_ico/plugin.png" width="6%" />&nbsp;插件</a>
+                            <ul>
+                                <li><a href="dream7c-DU.html">柒幻 扬琴</a></li>
+                                <!-- <li><a href="#"></a></li> -->
                             </ul>
                         </li>
                         <li><a href="#" style="color:#88abda;"><img src="images/menu_ico/music.png" width="6%" />&nbsp;音乐</a>
@@ -191,6 +197,19 @@ function setSubMenu() {
                 </div>
             </div>
         `;
+    } else if (key == "DU") {
+        html = 
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href="dream7c-DU.html"><b style="color:white;">柒幻 扬琴</b></a></li>
+                        <li><a href="dream7c-DU-download.html">下载</a></li>
+                        <li><a href="dream7c-DU-about.html">关于 扬琴</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
     }
     menu.innerHTML = html;
 }
@@ -213,13 +232,16 @@ function setFooter() {
 					</div>
 					<div style="float:left;width:24%;">
 						<p style="color:#88abda;clear:both;font-size:22px;">命令<br/></p>
-						<a href="CGFC.html">CGFC</a><br/>
-						<a href="Solstice.html">Solstice</a>
+						<a href="Solstice.html">Solstice</a><br/>
+                        <a href="CGFC.html">CGFC</a>
+                        <p style="color:#88abda;clear:both;font-size:22px;">插件<br/></p>
+						<a href="dream7c-DU.html">柒幻 扬琴</a><br/>
 					</div>
 					<div style="float:left;width:24%;">
 						<p style="color:#88abda;clear:both;font-size:22px;">游戏<br/></p>
 						<a href="dream7c-CL3.html">方块竞技3</a><br/>
 						<a href="research/rehabilitation game/index.html" target="_blank">RG</a><br/>
+                        <p style="color:#88abda;clear:both;font-size:22px;">音乐<br/></p>
 						<a href="music.html">游戏原声专辑</a><br/>
 					</div>
 					<div style="float:left;width:24%;">
