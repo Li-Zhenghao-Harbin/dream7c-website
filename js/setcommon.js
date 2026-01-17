@@ -18,6 +18,7 @@ function setMainMenu() {
                                 <li><a href="dream7c-FR.html">柒幻 霜降&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
                                 <li><a href="dream7c-DE.html">柒幻 寒露&nbsp;<img src="images/menu_ico/windows.png" width="6%" /><img src="images/menu_ico/android.png" width="6%" /></a></li>
                                 <li><a href="dream7c-DV.html">柒幻 麦芒&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
+                                <li><a href="dream7c-WD.html">柒幻 白露&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
                                 <li><a href="dream7c-RA.html">柒幻 谷雨&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
                                 <li><a href="dream7c-PC.html">柒幻 千纸鹤&nbsp;<img src="images/menu_ico/windows.png"width="6%" /></a></li>
                                 <li><a href="dream7c-GG.html">柒幻 几何精灵&nbsp;<img src="images/menu_ico/windows.png" width="6%" /></a></li>
@@ -226,6 +227,7 @@ function setFooter() {
 						<a href="dream7c-FR.html">柒幻 霜降</a><br/>
 						<a href="dream7c-DE.html">柒幻 寒露</a><br/>
 						<a href="dream7c-DV.html">柒幻 麦芒</a><br/>
+						<a href="dream7c-WD.html">柒幻 白露</a><br/>
 						<a href="dream7c-RA.html">柒幻 谷雨</a><br/>
 						<a href="dream7c-PC.html">柒幻 千纸鹤</a><br/>
 						<a href="dream7c-GG.html">柒幻 几何精灵</a>
