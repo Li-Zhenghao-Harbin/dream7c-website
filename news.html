@@ -23,9 +23,10 @@
 		<div class="tx3v div_year" id="year2">2017</div>
 		<div class="tx3v div_year" id="year3">2018</div>
 		<div class="tx3v div_year" id="year4">2021</div>
-		<div class="tx3v div_year" id="year5">2022</div>
+		<!-- <div class="tx3v div_year" id="year5">2022</div> -->
 		<div class="tx3v div_year" id="year6">2023</div>
 		<div class="tx3v div_year" id="year7">2025</div>
+		<div class="tx3v div_year" id="year8">2026</div>
 		<div style="clear:both;"><br/></div>
 		<div class="mdiv">
 			<div id="news1">
@@ -86,7 +87,7 @@
 					</div>
 				</a>
 			</div>
-			<div style="display:none;" id="news5">
+			<!-- <div style="display:none;" id="news5">
 				<hr/><p class="tx2v">2022</p><hr/>
 				<a href="dream7c-DE.html">
 					<div class="div_ev2">
@@ -104,7 +105,7 @@
 						<p class="tx3v">柒幻 霜降 Android 正式发布<br/>2022.03.05</p>
 					</div>
 				</a>
-			</div>
+			</div> -->
 			<div style="display:none;" id="news6">
 				<hr/><p class="tx2v">2023</p><hr/>	
 				<a href="dream7c-RA.html">
@@ -127,6 +128,25 @@
 					</div>
 				</a>
 			</div>
+			<div style="display:none;" id="news8">
+				<hr/><p class="tx2v">2026</p><hr/>
+				<a href="dream7c-DU.html">
+					<div class="div_ev2">
+						<div style="text-align: center;">
+							<img src="images/dream7c DU logo.png" width="40%" />
+						</div>
+						<p class="tx3v">柒幻 扬琴 开放测试<br/>2026.01.03</p>
+					</div>
+				</a>
+				<a href="dream7c-WD.html">
+					<div class="div_ev2">
+						<div style="text-align: center;">
+							<img src="images/dream7c WD logo.png" width="40%" />
+						</div>
+						<p class="tx3v">柒幻 白露 开放测试<br/>2026.01.17</p>
+					</div>
+				</a>
+			</div>
 		</div>
 		<div style="clear:both;"><br/></div>
 		<div id="footer"></div>
@@ -135,9 +155,10 @@
 </html>
 <script type="text/javascript">
 	window.onload=function(){
-		var n=7;
+		var n=8;
 		var display=function(k){
 			for(var i=1;i<=n;i++){
+				if (i == 5) continue;
 				document.getElementById("news"+i).style.display='none';
 				document.getElementById("year"+i).style.backgroundColor='white';
 				document.getElementById("year"+i).style.color='#535353';
@@ -158,14 +179,17 @@
 		document.getElementById("year4").onclick=function(){
 			display(4);
 		}
-		document.getElementById("year5").onclick=function(){
-			display(5);
-		}
+		// document.getElementById("year5").onclick=function(){
+		// 	display(5);
+		// }
 		document.getElementById("year6").onclick=function(){
 			display(6);
 		}
 		document.getElementById("year7").onclick=function(){
 			display(7);
+		}
+		document.getElementById("year8").onclick=function(){
+			display(8);
 		}
 	}
 </script>
