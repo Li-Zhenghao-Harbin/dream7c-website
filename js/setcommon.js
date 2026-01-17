@@ -211,6 +211,19 @@ function setSubMenu() {
                 </div>
             </div>
         `;
+    } else if (key == "WD") {
+        html = 
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href="dream7c-WD.html"><b style="color:white;">柒幻 白露</b></a></li>
+                        <li><a href="dream7c-WD-download.html">下载</a></li>
+                        <li><a href="dream7c-WD-about.html">关于 扬琴</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
     }
     menu.innerHTML = html;
 }
