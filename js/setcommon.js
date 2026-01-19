@@ -206,6 +206,7 @@ function setSubMenu() {
                     <ul>
                         <li style="background-color: #88abda;"><a href="dream7c-DU.html"><b style="color:white;">柒幻 扬琴</b></a></li>
                         <li><a href="dream7c-DU-download.html">下载</a></li>
+                        <li><a href="dream7c-DU-help.html">使用帮助</a></li>
                         <li><a href="dream7c-DU-about.html">关于 扬琴</a></li>
                     </ul>
                 </div>
