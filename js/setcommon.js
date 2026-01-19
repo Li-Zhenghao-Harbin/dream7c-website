@@ -219,7 +219,7 @@ function setSubMenu() {
                     <ul>
                         <li style="background-color: #88abda;"><a href="dream7c-WD.html"><b style="color:white;">柒幻 白露</b></a></li>
                         <li><a href="dream7c-WD-download.html">下载</a></li>
-                        <li><a href="dream7c-WD-about.html">关于 扬琴</a></li>
+                        <li><a href="dream7c-WD-about.html">关于 白露</a></li>
                     </ul>
                 </div>
             </div>
