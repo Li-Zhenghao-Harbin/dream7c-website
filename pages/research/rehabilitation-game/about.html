@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Rehabilitation Game</title>
+		<link rel="stylesheet" href="../../../css/style.css">
+		<link rel="stylesheet" href="../../../css/ionicons.min.css">
+		<script src="../../../js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<style>
+			.smc{float:left;color:#ffffff;width:25%;background:#b9ceea;text-align:center;padding:2%;cursor:pointer;}
+			.iconlang{float:left;width:12%;margin-left:4%;text-align:center;}
+			.iconframe{float:left;width:12%;margin-left:10.2%;text-align:center;}
+			.divp{float:left;width:49%;border:#88abda 2px solid;padding:1%;}
+			.divt{border:#88abda 2px solid;padding:1%;}
+		</style>
+		<div class="loading">
+			<div class="pic"></div>
+		</div>
+		<script>
+			document.onreadystatechange=function(){
+				if(document.readyState=="complete"){
+					$(".loading").fadeOut();
+				}
+			}
+		</script>
+		<div class="menu-container">
+			<div class="menu">
+				<ul>
+					<li><a href="../../../pages/research/rehabilitation-game/index.html"><b style="color:#88abda;">Home</b></a>
+					<li><a href="../../../pages/research/rehabilitation-game/about.html">About</a></li>
+					<li><a href="../../../pages/research/rehabilitation-game/resources.html">Resources</a></li>
+					<li><a href="../../../pages/research/rehabilitation-game/download.html">Download</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="../../../js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="../../../js/megamenu.js"></script>
+            
+        <script  type="text/javascript">
+            function getParam(paramName) {
+                var content = " ";
+                if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+                    content = this.location.search.substring(this.location.search.lastIndexOf("=") + 1);
+                }
+                return content;
+            }
+            function hidePages() {
+                document.getElementById("background").style.display = "none";
+                document.getElementById("introduction").style.display = "none";
+                document.getElementById("author").style.display = "none";
+            }
+            function load(content) {
+                var param = getParam(content);
+                if (param == "background") {
+                    hidePages()
+                    document.getElementById("background").style.display = "block";
+                } else if (param == "introduction") {
+                    hidePages()
+                    document.getElementById("introduction").style.display = "block";
+                } else if (param == "author") {
+                    hidePages()
+                    document.getElementById("author").style.display = "block";
+                }
+            }
+            window.onload = function() {
+                load(getParam());
+                document.getElementById("menu_background").onclick = function() {
+                    window.location.href="../../../pages/research/rehabilitation-game/about.html?content=background";
+                }
+                document.getElementById("menu_introduction").onclick = function() {
+                    window.location.href="../../../pages/research/rehabilitation-game/about.html?content=introduction";
+                }
+                document.getElementById("menu_author").onclick = function() {
+                    window.location.href="../../../pages/research/rehabilitation-game/about.html?content=author";
+                }
+            }
+        </script>
+        
+		<div style="padding: 10% 0 10% 0;background-color: #88abda;color: #e9e9e9;text-align: center;font-size: 200%;">About Rehabilitation Game</div>
+
+        <div style="background-color:#b9ceea;margin: 1%;">
+            <div class="smc" style="margin-left:12.5%" id="menu_background">Background</div>
+            <div class="smc" id="menu_introduction">Introduction</div>
+            <div class="smc" id="menu_author">Author</div>
+        </div>
+		
+		<div class="mdiv">
+            <div style="clear:both;display:block;" id="background">
+                <br/>
+                <h1 class="tx2v">Background</h1>
+                <div class="tx3">
+                    The background of the game is that two wizards come to another world through the portal, but as time goes by, the energy of the portal can only send one wizard back. For this reason, the two wizards confront each other through magic cards. In the game, the player plays the role of one wizard and defeats the opponent, thus gaining the opportunity to return to the original world through the portal.The background of the game is that two wizards come to another world through the portal, but as time goes by, the energy of the portal can only send one wizard back. For this reason, the two wizards confront each other through magic cards. In the game, the player plays the role of one wizard and defeats the opponent, thus gaining the opportunity to return to the original world through the portal.
+                </div>
+            </div>
+
+			<div style="clear:both;display:none;" id="introduction">
+				<br/>
+				<h1 class="tx2v">Introduction</h1>
+				<div class="tx3">
+					<p class="tx2v">Goal</p>
+					<ul>
+						<li>Control the game character to get cards (randomly generated on the ground);</li>
+						<li>Draw shapes on the card in sequence to active the card;</li>
+						<li>Get enough game points or let the opponent player's health point to zero.</ii>
+					</ul>
+					
+					<p class="tx2v">How to play</p>
+					<p class="tx3v">Keyboard</p>
+					<div class="divp">
+						<p class="tx2v">Player1</p>
+						<ul>
+							<li><b>A/D/W/S</b> control game character to move toward four directions (left/right/up/down)</li>
+							<li><b>E</b> draw square</li>
+							<li><b>R</b> draw upper triangle</li>
+							<li><b>T</b> draw lower triangle</li>
+							<li><b>Y</b> clear the shapes</li>
+						</ul>
+					</div>
+					<div class="divp" style="margin-left:1%;">
+						<p class="tx2v">Player2</p>
+						<ul>
+							<li><b>J/L/I/K</b> control game character to move toward four directions (left/right/up/down)</li>
+							<li><b>O</b> draw square</li>
+							<li><b>P</b> draw upper triangle</li>
+							<li><b>[</b> draw lower triangle</li>
+							<li><b>]</b> clear the shapes</li>
+						</ul>
+					</div>
+					<p class="tx3v" style="clear:both;"><br/>Arduino + Accelerometer</p>
+					<div>
+						<ul>
+							<li>Move the accelerometer to control the game character;</li>
+							<li>Press the button to ready to draw the shapes;</li>
+							<li>Move the accelerometer to draw the shapes to active the card.</li>
+						</ul>
+					</div>
+
+					<br/>
+					<div style="clear:both;background-color:#b9ceea;color:#ffffff;text-align:center;padding:1%;">Single Player Mode</div>
+					<div class="divt">
+						<p class="tx2v">Medusa</p>
+						<p class="tx3v">Description</p>
+						<p class="tx3">
+							Medusa changes her position randomly and then shots arrows or gazes the enemy. Player will be damaged when being shot and will be damaged and frozen for several seconds when facing toward Medusa.
+						</p>
+						<p class="tx3v">Features</p>
+						<p class="tx3">For Medusa</p>
+						<ul>
+							<li>Max HP: 50</li>
+							<li>Max GP: 50</li>
+							<li>Rage: Deal double damage when HP under 20</li>
+							<li>Hunter: Double arrow speed when GP over 25</li>
+						</ul>
+						<p class="tx3">For player</p>
+						<ul>
+							<li>Max HP: 20</li>
+							<li>Max GP: 50</li>
+							<li>Accelerate: 125% moving speed when GP over 15</li>
+							<li>Bless: Restore 1 HP while using a card when GP over 30</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div style="clear:both;display:none;" id="author">
+				<br/>
+				<h1 class="tx2v">Author</h1>
+                <div class="tx3">
+					Supervisor: <b>Alejandra Aranceta-Garza</b><br/><br/>
+					Cheif Designer: <b>Zhenghao Li</b><br/><br/>
+                    Founder and Cheif Executive Officer of dream7c (<u><a href="http://www.dream7c.com" target="_blank">www.dream7c.com</a></u>) since 2013.
+					<br/><br/>
+					<p class="tx3v"><br/>Programming languages used in the project:</p><br/>
+					<img class="iconlang" src="../../../research/rehabilitation game/images/icons_about/language/csharp.png" title="C#"/>
+					<img class="iconlang" src="../../../research/rehabilitation game/images/icons_about/language/cpp.png" title="C++" />
+					<img class="iconlang" src="../../../research/rehabilitation game/images/icons_about/language/java.png" style="width:10%;" title="Java" />
+					<img class="iconlang" src="../../../research/rehabilitation game/images/icons_about/language/html5.png" title="HTML" />
+					<img class="iconlang" src="../../../research/rehabilitation game/images/icons_about/language/css3.png" title="CSS" />
+					<img class="iconlang" src="../../../research/rehabilitation game/images/icons_about/language/javascript.png" title="Javascript" />
+					<p class="tx3v" style="clear:both;"><br/>Software and frameworks used in the project:</p><br/>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/unity.png" title="Unity"/>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/arduino.png" title="Arduino"/>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/blender.png" title="Blender"/>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/dotnet.png" title=".NET"/>
+					<p style="clear:both;"><br/></p>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/jquery.png" title="Jquery"/>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/android.png" title="Android" />
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/adobephotoshop.png" title="Photoshop"/>
+					<img class="iconframe" src="../../../research/rehabilitation game/images/icons_about/frame/adobeaudition.png" title="Audition"/>
+				</div>
+			</div>
+		</div>
+
+		<div style="clear:both;">&nbsp;</div>
+		<div style="background-color:#e9e9e9;font-size:18px;color:#535353;clear:both;overflow:hidden;line-height: 225%;">			
+			<div style="margin:0 auto;width:78%;padding:1% 1% 2% 1%;">
+				<br/>
+				<div style="float:left;width: 31%;">
+					<p style="color:#88abda;clear:both;font-size:22px;"><br/>About<br/><br/></p>
+					<a href="../../../pages/research/rehabilitation-game/about.html?content=background">Background</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/about.html?content=introduction">Introduction</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/about.html?content=author">Author</a><br/>
+				</div>
+				<div style="float:left;width:31%;">
+					<p style="color:#88abda;clear:both;font-size:22px;"><br/>Resources<br/><br/></p>
+					<a href="../../../pages/research/rehabilitation-game/resources.html?content=scenes">Scenes</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/resources.html?content=cards">Cards</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/resources.html?content=models">Modesl</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/resources.html?content=music">Music</a>
+				</div>
+				<div style="float:left;width:31%;">
+					<p style="color:#88abda;clear:both;font-size:22px;"><br/>Download<br/><br/></p>
+					<a href="../../../pages/research/rehabilitation-game/download.html?content=game">Game</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/download.html?content=designer">Card Designer</a><br/>
+					<a href="../../../pages/research/rehabilitation-game/download.html?content=statistician">Statistician</a>
+				</div>
+				<div style="clear:both;"><br/><br/>&copy; 2022-2023 Zhenghao Li<br/><br/></div>
+			</div>
+		</div>
+	</body>
+</html>

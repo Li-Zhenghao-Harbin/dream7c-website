@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Brain Age Prediction</title>
+        <link rel="stylesheet" href="../../../research/brain age prediction/css/style.css">
+        <script src="../../../research/brain age prediction/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="bg_main">
+            <p class="title_main">&gt;&gt;&nbsp;&nbsp;&nbsp;Brain Age Prediction&nbsp;&nbsp;&nbsp;&lt;&lt;</p>
+            <p class="title_sub">Qian Tong Lim, Stefan Olsson, Yinan Zhao, Zhenghao Li</p>
+        </div>
+        <div>
+            <div class="navigation">
+                <div class="btn_navigation" id="navi_background">
+                    Background
+                </div>
+                <div class="btn_navigation" id="navi_goals">
+                    Goals
+                </div>
+                <div class="btn_navigation" id="navi_methods">
+                    Methods
+                </div>
+                <div class="btn_navigation" id="navi_resources">
+                    Resources
+                </div>
+                <div class="btn_navigation" id="navi_references">
+                    References
+                </div>
+            </div>
+            <div class="bg_content" style="float:left;">
+                <div class="location" id="location">
+                    Brain Age Prediction&gt;&gt;Background
+                </div>
+                <div class="content_title" id="content_title" style="clear:both;">
+                    Background
+                </div>
+                <div class="content" id="con_background">
+                    The project aims to predict the age of human brains and classify them using the given MRI brain images, which is a widely used index for quantifying individuals' brain health and can be used to predict some potential diseases.
+                    <br/><br/>
+                    As some studies have shown, there is a certain connection between the human brain and age. The human brain ages as we grow, and the brain age is a biomarker that predicts chronological age using neuroimaging features. Besides, the grey matter and white matter of the brain will become loose with age. In addition, as cells shrink or die over the years, nerve volume decreases but skull size remains the same, so cerebrospinal fluid (CSF) accumulates in the ventricles. On account of these phenomena mentioned above, they can be used to predict the age of human brains.
+                    <br/><br/>
+                    Subtracting chronological age from estimated brain age can measure the difference between an individual's predicted and chronological age, the delta age, which can indicate some neurodegenerative diseases such as dementia, Parkinson's disease, and schizophrenia.
+                    <br/><br/>
+                    The intensity of brain tissues is one of the most important features of brain MRI segmentation. However, the intensities of different tissues are not uniform but vary gradually in the image space. In addition, on account of the partial volume effect (which describes the loss of small tissue areas due to the limited resolution of MRI scanners), the segmentation might lead to different results.
+                    <br/><br/>
+                    Therefore, traditionally, we need to pre-process MRI data to get accurate results, which includes removing background voxels, extracting brain tissues like skull-stripping and classification of different matter, and maybe some data-smoothing techniques. However, deep learning takes a different approach and processes raw images directly using a series of functions to avoid these problems.
+                </div>
+                <div class="content" id="con_goals" style="display:none;">
+                    <ul>
+                        <li>Decent layers of network, with moderate parameters value to not overwork our processors.</li>
+                        <li>Obtain network that can classfiy brain ages based on MRI scans within age range of 5 years.</li>
+                        <li>Low Mean Absolute Error (MAE).</li>
+                    </ul>                  
+                </div>
+                <div class="content" id="con_methods" style="display:none;">
+                    The project uses the given dataset to predicte the age of human brains and each group member contributes a model for the prediction, including AlexNet, VGGnet, ResNet, Simple CNN, and DenseNet. The core steps of processing can be summarized as:
+                    <br/>
+                    Initialization -&gt; Preprocess images  -&gt; Define model architecture -&gt; Compile model -&gt; Prediction -&gt; Evaluation
+                    <br/>
+                    <p class="content_title_sub">Initialization</p>
+                    <ul>
+                        <li>Import packages and functions</li>
+                        <li>Create TF.records</li>
+                        <li>Get metadata, load arrays and labels</li>
+                    </ul>
+                    <p class="content_title_sub">Preprocess images</p>
+                    <ul>
+                        <li>Data augmentation</li>
+                        <li>Read TF.records</li>
+                    </ul>
+                    <p class="content_title_sub">Define model architecture</p>
+                    <ul>
+                        <li>AlexNet model</li>
+                        <li>VGGnet model</li>
+                        <li>ResNet model</li>
+                        <li>Simple CNN model</li>
+                        <li>DenseNet model</li>
+                    </ul>
+                    <p class="content_title_sub">Prediction</p>
+                    <ul>
+                        <li>Compile models</li>
+                        <li>Train models with dataset</li>
+                        <li>Use model to predict labels on test data</li>
+                        <li>Evaluate with confusion matrix</li>
+                        <li>Plot the loss graph and accuracy graph</li>
+                        <li>Compare the accuracy between different architectures</li>
+                    </ul>
+                    <p class="content_title_sub">The accuracy of prediction results</p>
+                    <ul>
+                        <li>Training with 3 types of the dataset, including MPI 12 bins (MPI12), MPI 6 bins (MPI6), and IXI 12 bins (IXI12)</li>
+                    </ul>
+                    <div style="margin-left:10%;">
+                        <div class="content_result_title">
+                            AlexNet
+                        </div>
+                        <div style="clear:both;">
+                            <div class="content_result_value">
+                                MPI12<br/>24.8%
+                            </div>
+                            <div class="content_result_value">
+                                MPI6<br/>48.1%
+                            </div>
+                            <div class="content_result_value">
+                                IXI12<br/>8.1%
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear:both;margin-left:10%;"><br/>
+                        <div class="content_result_title">
+                            VGGnet
+                        </div>
+                        <div style="clear:both;">
+                            <div class="content_result_value">
+                                MPI12<br/>47.4%
+                            </div>
+                            <div class="content_result_value">
+                                MPI6<br/>69.2%
+                            </div>
+                            <div class="content_result_value">
+                                IXI12<br/>13.1%
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear:both;margin-left:10%;"><br/>
+                        <div class="content_result_title">
+                            ResNet
+                        </div>
+                        <div style="clear:both;">
+                            <div class="content_result_value">
+                                MPI12<br/>47.4%
+                            </div>
+                            <div class="content_result_value">
+                                MPI6<br/>72.2%
+                            </div>
+                            <div class="content_result_value">
+                                IXI12<br/>16.7%
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear:both;margin-left:10%;"><br/>
+                        <div class="content_result_title">
+                            DenseNet
+                        </div>
+                        <div style="clear:both;">
+                            <div class="content_result_value">
+                                MPI12<br/>66.9%
+                            </div>
+                            <div class="content_result_value">
+                                MPI6<br/>78.9%
+                            </div>
+                            <div class="content_result_value">
+                                IXI12<br/>6.3%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="con_resources" style="display:none;">
+                    Dataset: <a href="https://openneuro.org/datasets/ds000221/versions/1.0.0">OpenNEURO</a>
+                    <br/>
+                    The dataset includes 321 patient brain MRI scans and the brain ages of each scan (5 year bins), the data is stored as a <i>.nii.gz</i> file.
+                </div>
+                <div class="content" id="con_references" style="display:none;">
+                    <p class="content_title_sub">Documents</p>
+                    <ol>
+                        <li>
+                            D. A. Wood et al., "Accurate brain-age models for routine clinical MRI examinations," (in en), NeuroImage, vol. 249, p. 118871, 2022/4 2022, doi: 10.1016/j.neuroimage.2022.118871
+                        </li>
+                        <li>
+                            J. Huang et al., "Multimodal Magnetic Resonance Imaging Reveals Aberrant Brain Age Trajectory During Youth in Schizophrenia Patients," (in eng), Front Aging Neurosci, vol. 14, p. 823502, 2022, doi: 10.3389/fnagi.2022.823502.
+                        </li>
+                        <li>
+                            Poulopoulos D. What a TFRecord is and how to create it [Internet]. Medium. Towards Data Science; 2021 [cited 2022Nov28]. Available from: <a href="https://towardsdatascience.com/what-a-tfrecord-is-and-how-to-create-it-6be3c92c13cc">https://towardsdatascience.com/what-a-tfrecord-is-and-how-to-create-it-6be3c92c13cc</a>
+                        </li>
+                    </ol>
+                    <p class="content_title_sub">Framework and packages</p>
+                    <ol>
+                        <li>
+                            TensorFlow<br/>
+                            <a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a>
+                        </li>
+                        <li>
+                            TF.Records<br/>
+                            <a href="https://www.tensorflow.org/tutorials/load_data/tfrecord">https://www.tensorflow.org/tutorials/load_data/tfrecord</a>
+                        </li>
+                        <li>
+                            One-Hot Encoding<br/>
+                            <a href="https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/">https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div style="clear:both">&nbsp;</div>
+            <div  class="bg_foot">
+                <div class="bg_foot_p">
+                    <p class="title_foot">Brain Age Predicition Group</p>
+                    Qian Tong Lim<br/>
+                    Stefan Olsson<br/>
+                    Yinan Zhao<br/>
+                    Zhenghao Li
+                </div>
+                <div class="bg_foot_p">
+
+                </div>
+                <div style="clear:both;margin-left:10%;">
+                    <!-- <br/><br/>BE41003 Deep Learning for Medical Imaging -->
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var navi_background=$("#con_background");
+        var navi_goals=$("#con_goals");
+        var navi_methods=$("#con_methods");
+        var navi_resources=$("#con_resources");
+        var navi_references=$("#con_references");
+        var cons=[navi_background,navi_goals,navi_methods,navi_resources,navi_references];
+        var titles=["Background","Goals","Methods","Resources","References"];
+        jQuery(document).ready(function(){
+            $("#navi_background").on("click", function(){
+                changeContent(0);
+            });
+            $("#navi_goals").on("click", function(){
+                changeContent(1);
+            });
+            $("#navi_methods").on("click", function(){
+                changeContent(2);
+            });
+            $("#navi_resources").on("click", function(){
+                changeContent(3);
+            });
+            $("#navi_references").on("click", function(){
+                changeContent(4);
+            });
+        });
+        function changeContent(index){
+            var location_prefix="Brain Age Prediction>>";
+            $("#location").text(location_prefix+titles[index]);
+            $("#content_title").text(titles[index]);
+            for(var i=0;i<cons.length;i++){
+                cons[i].css('display','none');
+            }
+            cons[index].css('display','block');
+        }
+    </script>
+</html>
