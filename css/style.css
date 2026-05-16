@@ -246,7 +246,7 @@ img {
     background: var(--c-muted-bg);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow-soft);
-    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    /* border-radius: 0 0 var(--radius-md) var(--radius-md); */
 }
 
 .menu-mobile {
@@ -678,10 +678,10 @@ a:hover .ico {
 }
 
 /* 蓝底标题区统一为圆角模块 */
-div[style*="background-color:#88abda"],
+/* div[style*="background-color:#88abda"],
 div[style*="background-color: #88abda"] {
     border-radius: var(--radius-md);
-}
+} */
 
 /* 页脚与底部导航更清爽 */
 #footer a,
