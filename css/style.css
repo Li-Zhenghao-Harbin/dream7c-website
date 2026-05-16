@@ -544,6 +544,139 @@ a:hover .ico {
     box-shadow: var(--shadow-hover);
 }
 
+/* Brain Age Prediction（与全站共用样式） */
+.bg_main {
+    background: linear-gradient(135deg, rgba(136, 171, 218, 0.24), rgba(136, 171, 218, 0.08));
+    border: 1px solid rgba(136, 171, 218, 0.32);
+    border-radius: var(--radius-lg);
+    width: 88%;
+    margin: 26px auto 18px;
+    padding: 20px 16px;
+}
+
+.title_main {
+    margin: 0;
+    text-align: center;
+    color: var(--c-primary);
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.title_sub {
+    margin: 10px 0 0;
+    text-align: center;
+    color: var(--c-text);
+    font-size: 18px;
+}
+
+.navigation {
+    float: left;
+    width: 20%;
+    margin-left: 6%;
+}
+
+.btn_navigation {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px 10px;
+    text-align: center;
+    background: var(--c-muted-bg);
+    color: var(--c-text);
+    border: 1px solid rgba(136, 171, 218, 0.32);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.btn_navigation:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(136, 171, 218, 0.62);
+}
+
+.bg_content {
+    width: 64%;
+    margin-left: 4%;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid rgba(136, 171, 218, 0.28);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+.location {
+    color: var(--c-primary);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.content_title {
+    color: var(--c-primary);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.content_title_sub {
+    color: var(--c-primary);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 14px 0 8px;
+}
+
+.content {
+    color: var(--c-text);
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.content_result_title {
+    color: var(--c-primary);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.content_result_value {
+    float: left;
+    width: 26%;
+    margin-right: 4%;
+    padding: 10px 8px;
+    text-align: center;
+    background: var(--c-muted-bg);
+    border-radius: var(--radius-sm);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bg_foot {
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px 0 20px;
+    background: var(--c-muted-bg);
+    border-radius: 0;
+}
+
+.bg_foot_p {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    color: var(--c-text);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.title_foot {
+    margin: 0 0 10px;
+    color: var(--c-primary);
+    font-size: 22px;
+    font-weight: 700;
+}
+
 /* 蓝底标题区统一为圆角模块 */
 div[style*="background-color:#88abda"],
 div[style*="background-color: #88abda"] {
@@ -611,6 +744,18 @@ div[style*="background-color: #88abda"] {
         width: 88%;
         gap: 14px;
     }
+
+    .navigation {
+        width: 88%;
+        margin: 0 auto 14px;
+        float: none;
+    }
+
+    .bg_content {
+        width: 88%;
+        margin: 0 auto;
+        float: none !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -659,5 +804,31 @@ div[style*="background-color: #88abda"] {
 
     .home-product-card {
         padding: 10px;
+    }
+
+    .title_main {
+        font-size: 28px;
+    }
+
+    .title_sub {
+        font-size: 16px;
+    }
+
+    .content_title {
+        font-size: 26px;
+    }
+
+    .content_title_sub {
+        font-size: 21px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .bg_foot_p {
+        width: 86%;
+        margin: 0 7%;
+        float: none;
     }
 }
