@@ -832,3 +832,76 @@ div[style*="background-color: #88abda"] {
         float: none;
     }
 }
+
+/* Top menu bar modernized style only */
+.menu-container {
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(136, 171, 218, 0.36);
+    box-shadow: 0 8px 26px rgba(23, 32, 51, 0.08);
+}
+
+#main_menu.menu-container {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+#sub_menu.menu-container {
+    background: rgba(232, 232, 232, 0.86);
+    box-shadow: none;
+}
+
+.menu > ul {
+    max-width: 1320px;
+    padding: 8px 18px;
+}
+
+.menu > ul > li {
+    margin: 0 3px;
+}
+
+.menu > ul > li > a {
+    color: var(--c-text);
+    font-weight: 600;
+}
+
+.menu > ul > li:hover,
+.menu > ul > li[style*="background-color: #88abda"],
+.menu > ul > li[style*="background-color:#88abda"] {
+    background: var(--c-primary) !important;
+    box-shadow: 0 8px 18px rgba(136, 171, 218, 0.28);
+}
+
+.menu > ul > li:hover > a,
+.menu > ul > li:hover > a b,
+.menu > ul > li[style*="background-color: #88abda"] > a,
+.menu > ul > li[style*="background-color:#88abda"] > a,
+.menu > ul > li[style*="background-color: #88abda"] > a b,
+.menu > ul > li[style*="background-color:#88abda"] > a b {
+    color: #fff !important;
+}
+
+.menu > ul > li > ul {
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(136, 171, 218, 0.36);
+    box-shadow: 0 18px 38px rgba(23, 32, 51, 0.14);
+}
+
+.menu > ul > li > ul > li > a {
+    color: var(--c-primary) !important;
+    font-weight: 700;
+}
+
+.menu > ul > li > ul > li a {
+    border-color: rgba(136, 171, 218, 0.22);
+}
+
+.menu > ul > li > ul > li > ul > li a {
+    color: var(--c-text);
+    padding: 0.45em 0.3em;
+}
+
+.menu > ul > li > ul > li > ul > li a:hover {
+    color: var(--c-primary);
+    background: rgba(136, 171, 218, 0.14);
+}
