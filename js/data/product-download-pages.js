@@ -48,16 +48,17 @@ var productDownloadPageData = {
             {
                 tabLabel: "Windows版",
                 downloadTitle: "柒幻 扬琴",
-                version: "v 1.5",
+                version: "v 1.6",
                 supportLabel: "支持浏览器",
                 supportValue: "Chrome",
                 language: "中文(简体)",
                 size: "252 KB",
-                updateDate: "2026.05.19",
+                updateDate: "2026.05.23",
                 downloadLabel: "下 载",
-                downloadHref: "http://www.dream7c.com/柒幻 扬琴 v 1.5.rar",
+                downloadHref: "http://www.dream7c.com/柒幻 扬琴 v 1.6.rar",
                 thanksText: "感谢您使用 柒幻 扬琴",
                 changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
+                    '<p class="tx3b">v&nbsp;1.6&nbsp;(2026.05.23)</p>*界面优化<br/>*支持切换覆盖/追加模式<hr/>' +
                     '<p class="tx3b">v&nbsp;1.5&nbsp;(2026.05.19)</p>*界面优化<br/>*支持为数据添加分组及对分组管理<br/>*支持调整窗口宽度<br/>*支持调整窗口停靠位置<br/>*优化数据拖拽操作<br/>*修复可能出现的数据丢失问题<hr/>' +
                     '<p class="tx3b">v&nbsp;1.2&nbsp;(2026.01.20)</p>*界面优化<br/>*支持导入和导出数据<hr/>' +
                     '<p class="tx3b">beta&nbsp;(2026.01.03)</p>*开放测试'
@@ -208,17 +209,18 @@ var productDownloadPageData = {
             {
                 tabLabel: "Windows版",
                 downloadTitle: "柒幻 白露",
-                version: "v 1.0.25",
+                version: "v 1.1.0",
                 supportLabel: "支持系统",
                 supportValue: "WinAll",
                 language: "中文(简体)",
-                size: "259 MB",
-                updateDate: "2026.02.06",
+                size: "351 MB",
+                updateDate: "2026.05.23",
                 downloadNotice: "服务器维护中，请使用下方临时链接下载",
                 fallbackLinkLabel: "*点此使用临时链接下载",
-                fallbackLinkHref: "https://pan.quark.cn/s/cd108c664c7b",
+                fallbackLinkHref: "https://pan.quark.cn/s/345c0ffaefdd",
                 thanksText: "感谢您使用 柒幻 白露",
                 changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
+                    '<p class="tx3b">v&nbsp;1.1.0&nbsp;(2026.05.23)</p>*界面优化<br/>*添加面试经验记录及总览<br/>*投递记录页面支持分页<br/>*统计页面显示数据明细<hr/>' +
                     '<p class="tx3b">v&nbsp;1.0.25&nbsp;(2026.02.06)</p>*界面优化<br/>*投递日期默认升序排序<br/>*添加状态：招满/取消<br/>*修复可能出现的显示问题<hr/>' +
                     '<p class="tx3b">v&nbsp;1.0.20&nbsp;(2026.01.30)</p>*界面优化<br/>*首页显示进度和记录总数<br/>*优化对流程时间的校验规则<br/>*待投递状态计入总投递数<br/>*待投递状态不必输入投递日期<br/>*待投递状态不能添加流程<br/>*查看流程窗口包含投递日期<hr/>' +
                     '<p class="tx3b">v&nbsp;1.0.11&nbsp;(2026.01.24)</p>*界面优化<br/>*根据状态改变记录行背景色<br/>*支持搜索记录<br/>*支持统计数据<br/>*支持全屏显示<br/>*添加状态：待投递<br/>*修复编辑记录时取消后仍然保存流程数据<hr/>' +

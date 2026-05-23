@@ -1,17 +1,17 @@
 var aboutProductItems = [
     {
-        href: "../pages/dream7c-DV/index.html",
-        logoSrc: "../images/dream7c DV logo.png",
-        name: "柒幻 麦芒",
-        description: "柒幻于2025年推出的一款代码转换软件，支持将SQL语句转换为可在Mybatis的XML文件中使用的动态SQL语句。",
-        tags: ["软件", "2025.07.19"]
-    },
-    {
         href: "../pages/dream7c-WD/index.html",
         logoSrc: "../images/dream7c WD logo.png",
         name: "柒幻 白露",
         description: "柒幻于2026年推出的一款招聘记录软件，用于记录招聘进度和相关流程。",
         tags: ["软件", "2026.01.17"]
+    },
+    {
+        href: "../pages/dream7c-DV/index.html",
+        logoSrc: "../images/dream7c DV logo.png",
+        name: "柒幻 麦芒",
+        description: "柒幻于2025年推出的一款代码转换软件，支持将SQL语句转换为可在Mybatis的XML文件中使用的动态SQL语句。",
+        tags: ["软件", "2025.07.19"]
     },
     {
         href: "../pages/dream7c-DU/index.html",
@@ -91,21 +91,21 @@ var aboutTeamMembers = [
         name: "刘偌佟",
         paragraphs: [
             "平面设计师、音乐设计师，任职于数字媒体部。《方块竞技》系列音乐总设计师。参与柒幻官网等项目的图标设计。",
-            "刘佩佑于2018年9月加入柒幻，曾于北京师范大学获得学士学位。"
+            "刘偌佟于2018年9月加入柒幻，曾于北京师范大学获得学士学位。"
         ]
     },
     {
         name: "吴忌",
         paragraphs: [
             "音乐设计师，任职于数字媒体部。",
-            "吴忺于2013年11月加入柒幻，曾于黑龙江大学获得学士学位，硕士就读于马来西亚大学。"
+            "吴忌于2013年11月加入柒幻，曾于黑龙江大学获得学士学位，硕士就读于马来西亚大学。"
         ]
     },
     {
         name: "杨啸",
         paragraphs: [
             "软件工程师，任职于软件工程部。",
-            "杨暩于2017年9月加入柒幻，曾于长安大学获得学士学位。"
+            "杨啸于2017年9月加入柒幻，曾于长安大学获得学士学位。"
         ]
     }
 ];

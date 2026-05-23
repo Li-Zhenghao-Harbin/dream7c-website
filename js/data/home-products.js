@@ -1,18 +1,18 @@
 var homeProductItems = [
     {
-        href: "pages/dream7c-DV/index.html",
-        logoSrc: "images/dream7c DV logo.png",
-        title: "麦芒",
-        description: "提高对于SQL语句的转换效率",
-        previewSrc: "images/dream7c DV/dream7c DV conv ex1.png",
-        enabled: true
-    },
-    {
         href: "pages/dream7c-WD/index.html",
         logoSrc: "images/dream7c WD logo.png",
         title: "白露",
         description: "完善对于招聘进度和相关流程的管理",
         previewSrc: "images/dream7c WD/dream7c WD ex4.png",
+        enabled: true
+    },
+    {
+        href: "pages/dream7c-DV/index.html",
+        logoSrc: "images/dream7c DV logo.png",
+        title: "麦芒",
+        description: "提高对于SQL语句的转换效率",
+        previewSrc: "images/dream7c DV/dream7c DV conv ex1.png",
         enabled: true
     },
     {
