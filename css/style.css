@@ -905,3 +905,8 @@ div[style*="background-color: #88abda"] {
     color: var(--c-primary);
     background: rgba(136, 171, 218, 0.14);
 }
+
+.menu-mega-col > .menu-mega-section-title {
+    margin-top: 14px;
+    padding-top: 0.8em !important;
+}

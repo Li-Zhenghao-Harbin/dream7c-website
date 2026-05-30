@@ -36,39 +36,36 @@ function setMainMenu() {
                 <li><a href=\"${toRoot('index.html')}\"><b style="color:#88abda;">柒幻工作室</b></a></li>
                 <li><a href="#">项目产品</a>
                     <ul>
-                        <li><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/software.png')}\" width="6%" />&nbsp;软件</a>
+                        <li class="menu-mega-col"><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/software.png')}\" width="6%" />&nbsp;软件</a>
                             <ul>
-                            <li><a href=\"${toRoot('pages/dream7c-WD/index.html')}\">柒幻 白露&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
-                            <li><a href=\"${toRoot('pages/dream7c-DV/index.html')}\">柒幻 麦芒&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
-                            <li><a href=\"${toRoot('pages/dream7c-FR/index.html')}\">柒幻 霜降&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /><img src=\"${toRoot('images/menu_ico/android.png')}\" width="6%" /></a></li>
-                            <li><a href=\"${toRoot('pages/dream7c-DE/index.html')}\">柒幻 寒露&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /><img src=\"${toRoot('images/menu_ico/android.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-WD/index.html')}\">柒幻 白露&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-DV/index.html')}\">柒幻 麦芒&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-FR/index.html')}\">柒幻 霜降&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /><img src=\"${toRoot('images/menu_ico/android.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-DE/index.html')}\">柒幻 寒露&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /><img src=\"${toRoot('images/menu_ico/android.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-RA/index.html')}\">柒幻 谷雨&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-PC/index.html')}\">柒幻 千纸鹤&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\"width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-GG/index.html')}\">柒幻 几何精灵&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                             </ul>
                         </li>
-                        <li><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/command.png')}\" width="6%" />&nbsp;命令</a>
+                        <li class="menu-mega-col"><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/game.png')}\" width="6%" />&nbsp;游戏</a>
+                            <ul>
+                                <li><a href=\"${toRoot('pages/dream7c-CLR/index.html')}\">方块竞技 重制版&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-CL3/index.html')}\">方块竞技3&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                            </ul>
+                            <a href="#" class="menu-mega-section-title" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/plugin.png')}\" width="6%" />&nbsp;插件</a>
+                            <ul>
+                                <li><a href=\"${toRoot('pages/dream7c-DU/index.html')}\">柒幻 扬琴</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-mega-col"><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/command.png')}\" width="6%" />&nbsp;命令</a>
                             <ul>
                                 <li><a href=\"${toRoot('pages/Solstice.html')}\">Solstice</a></li>
                                 <li><a href=\"${toRoot('pages/CGFC.html')}\">CGFC</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/game.png')}\" width="6%" />&nbsp;游戏</a>
-                            <ul>
-                                <li><a href=\"${toRoot('pages/dream7c-CL3/index.html')}\">方块竞技3&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
-                                <li><a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/plugin.png')}\" width="6%" />&nbsp;插件</a>
-                            <ul>
-                                <li><a href=\"${toRoot('pages/dream7c-DU/index.html')}\">柒幻 扬琴</a></li>
-                                <!-- <li><a href="#"></a></li> -->
-                            </ul>
-                        </li>
-                        <li><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/music.png')}\" width="6%" />&nbsp;音乐</a>
+                            <a href="#" class="menu-mega-section-title" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/music.png')}\" width="6%" />&nbsp;音乐</a>
                             <ul>
                                 <li><a href=\"${toRoot('pages/music.html')}\">游戏原声专辑</a></li>
-                                <!-- <li><a href="#"></a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -169,6 +166,18 @@ function setSubMenu() {
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-CL3/index.html')}\"><b style="color:white;">柒幻 方块竞技3</b></a></li>
                         <li><a href=\"${toRoot('pages/dream7c-CL3/about.html')}\">关于 方块竞技3</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    }  else if (key == "CLR") {
+        html =
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-CLR/index.html')}\"><b style="color:white;">柒幻 方块竞技 重制版</b></a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-CL3/about.html')}\">关于 方块竞技 重制版</a></li>
                     </ul>
                 </div>
             </div>
@@ -277,16 +286,17 @@ function setFooter() {
 						<a href=\"${toRoot('pages/dream7c-GG/index.html')}\">柒幻 几何精灵</a>
 					</div>
 					<div style="float:left;width:24%;">
-						<p style="color:#88abda;clear:both;font-size:22px;">命令<br/></p>
-						<a href=\"${toRoot('pages/Solstice.html')}\">Solstice</a><br/>
-                        <a href=\"${toRoot('pages/CGFC.html')}\">CGFC</a>
+                        <p style="color:#88abda;clear:both;font-size:22px;">游戏<br/></p>
+						<a href=\"${toRoot('pages/dream7c-CLR/index.html')}\">方块竞技 重制版</a><br/>
+						<a href=\"${toRoot('pages/dream7c-CL3/index.html')}\">方块竞技3</a><br/>
+						<a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game</a><br/>
                         <p style="color:#88abda;clear:both;font-size:22px;">插件<br/></p>
 						<a href=\"${toRoot('pages/dream7c-DU/index.html')}\">柒幻 扬琴</a><br/>
 					</div>
 					<div style="float:left;width:24%;">
-						<p style="color:#88abda;clear:both;font-size:22px;">游戏<br/></p>
-						<a href=\"${toRoot('pages/dream7c-CL3/index.html')}\">方块竞技3</a><br/>
-						<a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game</a><br/>
+                        <p style="color:#88abda;clear:both;font-size:22px;">命令<br/></p>
+						<a href=\"${toRoot('pages/Solstice.html')}\">Solstice</a><br/>
+                        <a href=\"${toRoot('pages/CGFC.html')}\">CGFC</a>
                         <p style="color:#88abda;clear:both;font-size:22px;">音乐<br/></p>
 						<a href=\"${toRoot('pages/music.html')}\">游戏原声专辑</a><br/>
 					</div>

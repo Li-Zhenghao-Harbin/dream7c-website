@@ -4,7 +4,7 @@ var homeProductItems = [
         logoSrc: "images/dream7c WD logo.png",
         title: "白露",
         description: "完善对于招聘进度和相关流程的管理",
-        previewSrc: "images/dream7c WD/dream7c WD ex4.png",
+        previewSrc: "images/dream7c WD/dream7c WD ex5.png",
         enabled: true
     },
     {
@@ -53,7 +53,23 @@ var homeProductItems = [
         title: "千纸鹤",
         description: "提高对于网页和图片的制作效率",
         previewSrc: "images/dream7c PC/dream7c PC ex1.png",
-        enabled: false
+        enabled: true
+    },
+    {
+        href: "pages/dream7c-GG/index.html",
+        logoSrc: "images/dream7c GG logo.jpg",
+        title: "几何精灵",
+        description: "提高对于几何图形和函数的计算效率",
+        previewSrc: "images/dream7c GG/dream7c GG 2020 n1.png",
+        enabled: true
+    },
+    {
+        href: "pages/dream7c-CLR/index.html",
+        logoSrc: "images/dream7c CLR logo.jpg",
+        title: "方块竞技 重制版",
+        description: "全新的界面和游戏模式",
+        previewSrc: "images/dream7c CLR/dream7c CLR ex1.png",
+        enabled: true
     }
 ];
 

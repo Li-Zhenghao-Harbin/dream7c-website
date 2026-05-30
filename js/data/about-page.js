@@ -55,6 +55,13 @@ var aboutProductItems = [
         description: "柒幻于2017年推出的提供对于几何图形和函数快速计算方法的软件，由柒幻几何计算器、柒幻函数计算器等整合重构而成。通过使用包含于其中的命令行工具CGFC，可快速进行计算从而大幅提高效率。",
         tags: ["软件", "2016.01.25"]
     },
+        {
+        href: "../pages/dream7c-CLR/index.html",
+        logoSrc: "../images/dream7c CLR logo.jpg",
+        name: "方块竞技 重制版",
+        description: "“方块竞技”系列游戏重制版，重新设计界面和游戏模式。",
+        tags: ["游戏", "双人", "本地", "2026.06.02"]
+    },
     {
         href: "../pages/dream7c-CL3/index.html",
         logoSrc: "../images/dream7c CL3 logo.jpg",
@@ -98,7 +105,7 @@ var aboutTeamMembers = [
         name: "吴忌",
         paragraphs: [
             "音乐设计师，任职于数字媒体部。",
-            "吴忌于2013年11月加入柒幻，曾于黑龙江大学获得学士学位，硕士就读于马来西亚大学。"
+            "吴忌于2013年11月加入柒幻，曾于黑龙江大学获得学士学位，硕士就读于马来亚大学。"
         ]
     },
     {

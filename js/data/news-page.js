@@ -97,22 +97,28 @@ var newsYearItems = [
     {
         id: 8,
         year: "2026",
+        layout: "three-up",
         entries: [
             {
                 href: "../pages/dream7c-DU/index.html",
                 title: "柒幻 扬琴 正式发布",
                 date: "2026.01.20",
                 imageSrc: "../images/dream7c DU logo.png",
-                imageWidth: "40%",
-                halfWidth: true
+                imageWidth: "60%"
             },
             {
                 href: "../pages/dream7c-WD/index.html",
                 title: "柒幻 白露 正式发布",
                 date: "2026.01.20",
                 imageSrc: "../images/dream7c WD logo.png",
-                imageWidth: "40%",
-                halfWidth: true
+                imageWidth: "60%"
+            },
+            {
+                href: "../pages/dream7c-CLR/index.html",
+                title: "柒幻 方块竞技 重制版 正式发布",
+                date: "2026.06.02",
+                imageSrc: "../images/dream7c CL3 logo.jpg",
+                imageWidth: "60%"
             }
         ]
     }
@@ -153,6 +159,8 @@ function renderNewsSections(selector) {
     var item;
     var entry;
     var entryHtml;
+    var useThreeUp;
+    var entryWrapperStyle;
 
     if (!container) {
         return;
@@ -160,13 +168,22 @@ function renderNewsSections(selector) {
 
     for (i = 0; i < newsYearItems.length; i++) {
         item = newsYearItems[i];
+        useThreeUp = item.layout === "three-up";
         html += '<div' + (i > 0 ? ' style="display:none;"' : '') + ' id="news' + item.id + '">';
         html += '<hr/><p class="tx2v">' + escapeNewsHtml(item.year) + '</p><hr/>';
+        if (useThreeUp) {
+            html += '<div style="display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:space-between;gap:18px;">';
+        }
 
         for (j = 0; j < item.entries.length; j++) {
             entry = item.entries[j];
+            entryWrapperStyle = useThreeUp ? ' style="flex:1 1 0;min-width:0;display:block;"' : '';
             entryHtml = '';
-            entryHtml += '<div' + (entry.halfWidth ? ' class="div_ev2"' : '') + '>';
+            entryHtml += '<div' + (
+                useThreeUp
+                    ? ' style="flex:1 1 0;min-width:0;"'
+                    : (entry.halfWidth ? ' class="div_ev2"' : '')
+            ) + '>';
             entryHtml += '<div style="text-align: center;">';
             entryHtml += '<img src="' + escapeNewsHtml(entry.imageSrc) + '" width="' + escapeNewsHtml(entry.imageWidth) + '" />';
             entryHtml += '</div>';
@@ -174,12 +191,19 @@ function renderNewsSections(selector) {
             entryHtml += '</div>';
 
             if (entry.href) {
-                html += '<a href="' + escapeNewsHtml(entry.href) + '">' + entryHtml + '</a>';
+                html += '<a href="' + escapeNewsHtml(entry.href) + '"' + entryWrapperStyle + '>' + entryHtml + '</a>';
             } else {
-                html += entryHtml;
+                if (useThreeUp) {
+                    html += '<div' + entryWrapperStyle + '>' + entryHtml + '</div>';
+                } else {
+                    html += entryHtml;
+                }
             }
         }
 
+        if (useThreeUp) {
+            html += '</div>';
+        }
         html += '</div>';
     }
 
