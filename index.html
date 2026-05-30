@@ -31,8 +31,27 @@
 			.ico .tx1{ margin: 0;}
 			.anni {width: 26%;margin-left: 5.5%;float: left;text-align: center;padding: 0px;margin-top: 3%;}
 		</style>
-		<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-		<script>LA.init({id:"3Q0Gil5ymeLHqgRI",ck:"3Q0Gil5ymeLHqgRI"})</script>
+		<script>
+			(function() {
+				var localHosts = ["localhost", "127.0.0.1", "::1"];
+				var isLocalDev = localHosts.indexOf(window.location.hostname) !== -1 || window.location.protocol === "file:";
+
+				if (isLocalDev) {
+					return;
+				}
+
+				var script = document.createElement("script");
+				script.charset = "UTF-8";
+				script.id = "LA_COLLECT";
+				script.src = "//sdk.51.la/js-sdk-pro.min.js";
+				script.onload = function() {
+					if (window.LA) {
+						window.LA.init({id:"3Q0Gil5ymeLHqgRI",ck:"3Q0Gil5ymeLHqgRI"});
+					}
+				};
+				document.head.appendChild(script);
+			})();
+		</script>
 	</head>
 	<body>
 		<div class="loading"><div class="pic"></div></div>
