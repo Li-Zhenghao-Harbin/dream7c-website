@@ -24,6 +24,14 @@ var homeProductItems = [
         enabled: true
     },
     {
+        href: "pages/dream7c-CLR/index.html",
+        logoSrc: "images/dream7c CLR logo.png",
+        title: "方块竞技 重制版",
+        description: "全新的界面和游戏模式",
+        previewSrc: "images/dream7c CLR/dream7c CLR main menu.png",
+        enabled: true
+    },
+    {
         href: "pages/dream7c-FR/index.html",
         logoSrc: "images/dream7c FR logo.jpg",
         title: "霜降",
@@ -61,14 +69,6 @@ var homeProductItems = [
         title: "几何精灵",
         description: "提高对于几何图形和函数的计算效率",
         previewSrc: "images/dream7c GG/dream7c GG 2020 n1.png",
-        enabled: true
-    },
-    {
-        href: "pages/dream7c-CLR/index.html",
-        logoSrc: "images/dream7c CLR logo.jpg",
-        title: "方块竞技 重制版",
-        description: "全新的界面和游戏模式",
-        previewSrc: "images/dream7c CLR/dream7c CLR ex1.png",
         enabled: true
     }
 ];

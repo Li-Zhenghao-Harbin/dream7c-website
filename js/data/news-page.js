@@ -38,7 +38,7 @@ var newsYearItems = [
             },
             {
                 href: "../pages/dream7c-CL3/index.html",
-                title: "柒幻 方块竞技3 正式发布",
+                title: "方块竞技3 正式发布",
                 date: "2018.05.27",
                 imageSrc: "../images/dream7c CL3 logo.jpg",
                 imageWidth: "40%",
@@ -115,9 +115,9 @@ var newsYearItems = [
             },
             {
                 href: "../pages/dream7c-CLR/index.html",
-                title: "柒幻 方块竞技 重制版 正式发布",
-                date: "2026.06.02",
-                imageSrc: "../images/dream7c CL3 logo.jpg",
+                title: "方块竞技 重制版 即将发布",
+                date: "敬请期待",
+                imageSrc: "../images/dream7c CLR logo.png",
                 imageWidth: "60%"
             }
         ]
