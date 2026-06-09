@@ -28,7 +28,7 @@ var homeProductItems = [
         logoSrc: "images/dream7c CLR logo.png",
         title: "方块竞技 重制版",
         description: "全新的界面和游戏模式",
-        previewSrc: "images/dream7c CLR/dream7c CLR main menu.png",
+        previewSrc: "images/dream7c CLR/dream7c CLR classic.png",
         enabled: true
     },
     {
