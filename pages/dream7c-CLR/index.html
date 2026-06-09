@@ -18,8 +18,9 @@
 		<div id="sub_menu" class="menu-container"></div>
 		<style>
 			.clr-page{width:86%;max-width:1320px;margin:0 auto;}
-			.clr-hero{padding:28px 0 16px;}
-			.clr-hero-logo{width:36%;max-width:360px;display:block;margin:0 auto 24px;}
+			.clr-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,0.9fr);gap:28px;align-items:center;padding:28px 0 16px;}
+			.clr-hero-logo{width:58%;max-width:360px;display:block;margin:0 auto;}
+			.clr-hero .mdiv{width:100%;max-width:none;}
 			.clr-shot img,.clr-mode-image img{width:100%;display:block;border-radius:10px;}
 			.clr-actions{overflow:hidden;margin-top:24px;}
 			.clr-section{clear:both;padding:24px 0;}
@@ -33,9 +34,9 @@
 			.clr-mode-image{float:left;width:46%;}
 			.clr-mode-content{float:right;width:50%;}
 			.clr-skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px;}
-			.clr-skill{overflow:hidden;background:#f7f7f7;border:1px solid #e8e8e8;border-radius:8px;padding:10px;}
-			.clr-skill img{float:left;width:54px;height:54px;margin-right:12px;border-radius:8px;}
-			.clr-skill p{margin:0;}
+			.clr-skill{display:grid;grid-template-columns:54px minmax(0,1fr);gap:0 12px;align-items:start;background:#f7f7f7;border:1px solid #e8e8e8;border-radius:8px;padding:10px;}
+			.clr-skill img{grid-row:1 / span 2;width:54px;height:54px;border-radius:0;}
+			.clr-skill p{grid-column:2;margin:0;min-width:0;}
 			.clr-shot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
 			.clr-shot{text-align:center;}
 			.clr-download{background:#f7f7f7;border:1px solid #e8e8e8;border-radius:8px;padding:22px;overflow:hidden;}
@@ -44,18 +45,18 @@
 			.clr-placeholder{color:#535353;}
 			@media (max-width: 768px) {
 				.clr-page{width:92%;}
-				.clr-hero-logo{width:68%;}
+				.clr-hero{grid-template-columns:1fr;}
+				.clr-hero-logo{width:68%;margin-bottom:12px;}
 				.clr-mode-image,.clr-mode-content,.clr-download-info,.clr-download-action{float:none;width:100%;}
 				.clr-mode-grid,.clr-skill-grid,.clr-shot-grid{grid-template-columns:1fr;}
 			}
 		</style>
 		<div class="clr-page">
+			<h1 class="tx1">方块竞技 重制版</h1>
 			<div class="clr-hero">
-				<h1 class="tx1">方块竞技 重制版</h1>
 				<img class="clr-hero-logo" src="../../images/dream7c CLR logo.png" alt="方块竞技 重制版 logo" />
 				<div class="mdiv">
 					<div class="clr-section" id="clr-download">
-						<p class="tx2v">下载 方块竞技 重制版</p>
 						<div class="clr-download">
 							<div class="clr-download-info">
 								<p class="tx3b">方块竞技 重制版</p>
@@ -67,7 +68,7 @@
 									发布日期：2026.06.09
 								</p>
 							</div>
-							<a href="#"><div class="clr-download-action">点此下载</div></a>
+							<a href="https://pan.quark.cn/s/4bc98e35ecf4"><div class="clr-download-action">点此下载</div></a>
 							<a href="../../pages/dream7c-CLR/about.html"><div class="clr-download-action">关于</div></a>
 						</div>
 					</div>
