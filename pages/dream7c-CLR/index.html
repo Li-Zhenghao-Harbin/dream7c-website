@@ -33,8 +33,8 @@
 			.clr-mode-detail-hidden{display:none;}
 			.clr-mode-image{float:left;width:46%;}
 			.clr-mode-content{float:right;width:50%;}
-			.clr-skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px;}
-			.clr-skill{display:grid;grid-template-columns:54px minmax(0,1fr);gap:0 12px;align-items:start;background:#f7f7f7;border:1px solid #e8e8e8;border-radius:8px;padding:10px;}
+			.clr-skill-grid{column-count:2;column-gap:12px;margin-top:14px;}
+			.clr-skill{display:grid;grid-template-columns:54px minmax(0,1fr);gap:0 12px;align-items:start;break-inside:avoid;margin-bottom:12px;background:#f7f7f7;border:1px solid #e8e8e8;border-radius:8px;padding:10px;}
 			.clr-skill img{grid-row:1 / span 2;width:54px;height:54px;border-radius:0;}
 			.clr-skill p{grid-column:2;margin:0;min-width:0;}
 			.clr-shot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
@@ -48,7 +48,8 @@
 				.clr-hero{grid-template-columns:1fr;}
 				.clr-hero-logo{width:68%;margin-bottom:12px;}
 				.clr-mode-image,.clr-mode-content,.clr-download-info,.clr-download-action{float:none;width:100%;}
-				.clr-mode-grid,.clr-skill-grid,.clr-shot-grid{grid-template-columns:1fr;}
+				.clr-mode-grid,.clr-shot-grid{grid-template-columns:1fr;}
+				.clr-skill-grid{column-count:1;}
 			}
 		</style>
 		<div class="clr-page">
@@ -63,12 +64,12 @@
 								<p class="tx3">
 									版本：alpha<br/><br/>
 									支持系统：Windows<br/>
-									语言：中文（简体）<br/>
+									语言：中文(简体)<br/>
 									占用内存：176 MB<br/><br/>
 									发布日期：2026.06.09
 								</p>
 							</div>
-							<a href="https://pan.quark.cn/s/4bc98e35ecf4"><div class="clr-download-action">点此下载</div></a>
+							<a href="https://pan.quark.cn/s/4bc98e35ecf4" target="_blank"><div class="clr-download-action">点此下载</div></a>
 							<a href="../../pages/dream7c-CLR/about.html"><div class="clr-download-action">关于</div></a>
 						</div>
 					</div>
@@ -125,11 +126,11 @@
 					<p class="tx2v">探索模式</p>
 					<p class="tx3">目标：将对手的HP降为0或获得20GP</p>
 					<div class="clr-skill-grid">
-						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_0_empower.png" alt="empower" /><p class="tx3b">强化</p><p class="tx3 clr-placeholder">强化下一个技能（技能中的括号内的内容为强化后的效果）</p></div>
-						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_1_haste.png" alt="haste" /><p class="tx3b">加速</p><p class="tx3 clr-placeholder">移动速度短暂变为1.5（2）倍</p></div>
-						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_2_knockback.png" alt="knockback" /><p class="tx3b">击退</p><p class="tx3 clr-placeholder">将对手击退一小段（一大段）距离，并造成2（4）点伤害</p></div>
-						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_3_assault.png" alt="assault" /><p class="tx3b">突袭</p><p class="tx3 clr-placeholder">造成4（8）点伤害</p></div>
-						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_4_siphon.png" alt="siphon" /><p class="tx3b">虹吸</p><p class="tx3 clr-placeholder">获得2（4）HP/GP，对手减少2（4）HP/GP</p></div>
+						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_0_empower.png" alt="empower" /><p class="tx3b">强化</p><p class="tx3 clr-placeholder">强化下一个技能(技能中的括号内的内容为强化后的效果)</p></div>
+						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_1_haste.png" alt="haste" /><p class="tx3b">加速</p><p class="tx3 clr-placeholder">移动速度短暂变为1.5(2)倍</p></div>
+						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_2_knockback.png" alt="knockback" /><p class="tx3b">击退</p><p class="tx3 clr-placeholder">将对手击退一小段(一大段)距离，并造成2(4)点伤害</p></div>
+						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_3_assault.png" alt="assault" /><p class="tx3b">突袭</p><p class="tx3 clr-placeholder">造成4(8)点伤害</p></div>
+						<div class="clr-skill"><img src="../../images/dream7c CLR/icons/explore/item_4_siphon.png" alt="siphon" /><p class="tx3b">虹吸</p><p class="tx3 clr-placeholder">获得2(4)HP/GP，对手减少2(4)HP/GP</p></div>
 					</div>
 				</div>
 			</div>
