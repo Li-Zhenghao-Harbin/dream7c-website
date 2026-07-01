@@ -1,4 +1,25 @@
 var productDownloadPageData = {
+    CLR: {
+        title: "下载 方块竞技 重制版",
+        platforms: [
+            {
+                tabLabel: "Windows版",
+                downloadTitle: "方块竞技 重制版",
+                version: "beta",
+                supportLabel: "支持系统",
+                supportValue: "Windows",
+                language: "中文(简体)",
+                size: "177 MB",
+                updateDate: "2026.07.01",
+                downloadLabel: "下 载",
+                downloadHref: "https://pan.quark.cn/s/4bc98e35ecf4",
+                thanksText: "感谢您使用 方块竞技 重制版",
+                changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
+                    '<p class="tx3b">beta&nbsp;(2026.07.01)</p>*添加背景音乐<br/>*支持自定义按键以及键位显示<br/>*探索模式中技能共享冷却时间<hr/>' +
+                    '<p class="tx3b">alpha&nbsp;(2026.06.09)</p>*开放测试'
+            }
+        ]
+    },
     DE: {
         title: "下载 柒幻 寒露",
         platforms: [
@@ -133,11 +154,11 @@ var productDownloadPageData = {
         ]
     },
     GG: {
-        title: "下载 柒幻 几何精灵 2020",
+        title: "下载 柒幻 几何精灵",
         platforms: [
             {
                 tabLabel: "Windows版",
-                downloadTitle: "柒幻 几何精灵 2020",
+                downloadTitle: "柒幻 几何精灵",
                 version: "v 2.5.1.3",
                 supportLabel: "支持系统",
                 supportValue: "WinAll",
@@ -215,9 +236,11 @@ var productDownloadPageData = {
                 language: "中文(简体)",
                 size: "351 MB",
                 updateDate: "2026.05.23",
-                downloadNotice: "服务器维护中，请使用下方临时链接下载",
-                fallbackLinkLabel: "*点此使用临时链接下载",
-                fallbackLinkHref: "https://pan.quark.cn/s/345c0ffaefdd",
+                downloadLabel: "下 载",
+                downloadHref: "https://pan.quark.cn/s/345c0ffaefdd",
+                // downloadNotice: "服务器维护中，请使用下方临时链接下载",
+                // fallbackLinkLabel: "*点此使用临时链接下载",
+                // fallbackLinkHref: "https://pan.quark.cn/s/345c0ffaefdd",
                 thanksText: "感谢您使用 柒幻 白露",
                 changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
                     '<p class="tx3b">v&nbsp;1.1.0&nbsp;(2026.05.23)</p>*界面优化<br/>*添加面试经验记录及总览<br/>*投递记录页面支持分页<br/>*统计页面显示数据明细<hr/>' +

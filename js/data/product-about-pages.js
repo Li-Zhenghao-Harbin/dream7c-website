@@ -237,6 +237,7 @@ var productAboutPageData = {
         title: "关于 方块竞技 重制版",
         intro: "方块竞技 重制版 是 方块竞技 系列游戏的重制版，重新设计了界面和游戏模式。",
         history: [
+            "2026.07.01    方块竞技 重制版 beta",
             "2026.06.09    方块竞技 重制版 alpha"
         ],
         developers: [
