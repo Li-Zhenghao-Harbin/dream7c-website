@@ -20,7 +20,8 @@
 			.clr-page{width:86%;max-width:1320px;margin:0 auto;}
 			.clr-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,0.9fr);gap:28px;align-items:center;padding:28px 0 16px;}
 			.clr-hero-logo{width:58%;max-width:360px;display:block;margin:0 auto;}
-			.clr-hero .mdiv{width:100%;max-width:none;}
+			.clr-hero-actions{display:grid;grid-template-columns:1fr;gap:16px;}
+			.clr-hero-action{display:block;text-align:center;font-size:20px;background-color:#88abda;color:#fff;padding:18px;border-radius:8px;}
 			.clr-shot img,.clr-mode-image img{width:100%;display:block;border-radius:10px;}
 			.clr-actions{overflow:hidden;margin-top:24px;}
 			.clr-section{clear:both;padding:24px 0;}
@@ -39,15 +40,12 @@
 			.clr-skill p{grid-column:2;margin:0;min-width:0;}
 			.clr-shot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
 			.clr-shot{text-align:center;}
-			.clr-download{background:#f7f7f7;border:1px solid #e8e8e8;border-radius:8px;padding:22px;overflow:hidden;}
-			.clr-download-info{float:left;width:58%;}
-			.clr-download-action{float:right;width:34%;margin-top:18px;padding:18px;text-align:center;background:#88abda;color:#fff;font-size:20px;border-radius:8px;}
 			.clr-placeholder{color:#535353;}
 			@media (max-width: 768px) {
 				.clr-page{width:92%;}
 				.clr-hero{grid-template-columns:1fr;}
 				.clr-hero-logo{width:68%;margin-bottom:12px;}
-				.clr-mode-image,.clr-mode-content,.clr-download-info,.clr-download-action{float:none;width:100%;}
+				.clr-mode-image,.clr-mode-content{float:none;width:100%;}
 				.clr-mode-grid,.clr-shot-grid{grid-template-columns:1fr;}
 				.clr-skill-grid{column-count:1;}
 			}
@@ -55,24 +53,10 @@
 		<div class="clr-page">
 			<h1 class="tx1">方块竞技 重制版</h1>
 			<div class="clr-hero">
-				<img class="clr-hero-logo" src="../../images/dream7c CLR logo.png" alt="方块竞技 重制版 logo" />
-				<div class="mdiv">
-					<div class="clr-section" id="clr-download">
-						<div class="clr-download">
-							<div class="clr-download-info">
-								<p class="tx3b">方块竞技 重制版</p>
-								<p class="tx3">
-									版本：alpha<br/><br/>
-									支持系统：Windows<br/>
-									语言：中文(简体)<br/>
-									占用内存：176 MB<br/><br/>
-									发布日期：2026.06.09
-								</p>
-							</div>
-							<a href="../../pages/dream7c-CLR/download.html"><div class="clr-download-action">下载</div></a>
-							<a href="../../pages/dream7c-CLR/about.html"><div class="clr-download-action">关于</div></a>
-						</div>
-					</div>
+				<img class="clr-hero-logo" src="../../images/dream7c CLR logo.png" alt="方块竞技 重制版 logo" style="width: 50%;"/>
+				<div class="clr-hero-actions" style="width: 40%;">
+					<a href="../../pages/dream7c-CLR/download.html"><div class="clr-hero-action">下载</div></a>
+					<a href="../../pages/dream7c-CLR/about.html"><div class="clr-hero-action">关于</div></a>
 				</div>
 			</div>
 

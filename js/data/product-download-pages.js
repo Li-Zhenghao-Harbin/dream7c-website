@@ -12,7 +12,7 @@ var productDownloadPageData = {
                 size: "177 MB",
                 updateDate: "2026.07.01",
                 downloadLabel: "下 载",
-                downloadHref: "https://pan.quark.cn/s/4bc98e35ecf4",
+                downloadHref: "https://pan.quark.cn/s/af7be7f5829a",
                 thanksText: "感谢您使用 方块竞技 重制版",
                 changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
                     '<p class="tx3b">beta&nbsp;(2026.07.01)</p>*添加背景音乐<br/>*支持自定义按键以及键位显示<br/>*探索模式中技能共享冷却时间<hr/>' +
