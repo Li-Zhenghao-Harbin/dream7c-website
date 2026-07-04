@@ -1,4 +1,15 @@
 var productReadyBannerData = {
+    CLR: {
+        brand: "",
+        name: "方块竞技 重制版",
+        version: "beta",
+        date: "2026.07.01",
+        status: "测试版",
+        logoSrc: "../../images/dream7c CLR logo.png",
+        downloadHref: "../../pages/dream7c-CLR/download.html",
+        aboutHref: "../../pages/dream7c-CLR/about.html",
+        accentColor: "#88abda"
+    },
     DE: {
         brand: "柒幻",
         name: "寒露",
@@ -8,6 +19,83 @@ var productReadyBannerData = {
         logoSrc: "../../images/dream7c DE logo.jpg",
         downloadHref: "../../pages/dream7c-DE/download.html",
         aboutHref: "../../pages/dream7c-DE/about.html",
+        accentColor: "#88abda"
+    },
+    DU: {
+        brand: "柒幻",
+        name: "扬琴",
+        version: "v 1.6",
+        date: "2026.05.23",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c DU logo.png",
+        downloadHref: "../../pages/dream7c-DU/download.html",
+        aboutHref: "../../pages/dream7c-DU/about.html",
+        accentColor: "#88abda"
+    },
+    DV: {
+        brand: "柒幻",
+        name: "麦芒",
+        version: "v 1.2.0.0",
+        date: "2025.07.19",
+        status: "正式发布",
+        logoSrc: "../../images/dream7c DV logo.png",
+        downloadHref: "../../pages/dream7c-DV/download.html",
+        aboutHref: "../../pages/dream7c-DV/about.html",
+        accentColor: "#88abda"
+    },
+    FR: {
+        brand: "柒幻",
+        name: "霜降",
+        version: "v 3.1.0.5",
+        date: "2022.12.14",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c FR logo.jpg",
+        downloadHref: "../../pages/dream7c-FR/download.html",
+        aboutHref: "../../pages/dream7c-FR/about.html",
+        accentColor: "#88abda"
+    },
+    GG: {
+        brand: "柒幻",
+        name: "几何精灵",
+        version: "v 2.5.1.3",
+        date: "2020.12.05",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c GG logo.jpg",
+        downloadHref: "../../pages/dream7c-GG/download.html",
+        aboutHref: "../../pages/dream7c-GG/about.html",
+        accentColor: "#88abda"
+    },
+    PC: {
+        brand: "柒幻",
+        name: "千纸鹤",
+        version: "v 3.1.2.0",
+        date: "2022.12.14",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c PC logo.jpg",
+        downloadHref: "../../pages/dream7c-PC/download.html",
+        aboutHref: "../../pages/dream7c-PC/about.html",
+        accentColor: "#88abda"
+    },
+    RA: {
+        brand: "柒幻",
+        name: "谷雨",
+        version: "v 1.0.0.2",
+        date: "2023.01.31",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c RA logo.jpg",
+        downloadHref: "../../pages/dream7c-RA/download.html",
+        aboutHref: "../../pages/dream7c-RA/about.html",
+        accentColor: "#88abda"
+    },
+    WD: {
+        brand: "柒幻",
+        name: "白露",
+        version: "v 1.1.0",
+        date: "2026.05.23",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c WD logo.png",
+        downloadHref: "../../pages/dream7c-WD/download.html",
+        aboutHref: "../../pages/dream7c-WD/about.html",
         accentColor: "#88abda"
     }
 };
@@ -56,9 +144,20 @@ function injectProductReadyBannerStyle() {
 function renderProductReadyBanner(selector, key) {
     var container = document.querySelector(selector);
     var data = productReadyBannerData[key];
+    var titleText;
+    var actionsHtml = "";
 
     if (!container || !data) {
         return;
+    }
+
+    titleText = data.brand ? escapeReadyBannerHtml(data.brand) + ' <span class="product-ready-banner__name">' + escapeReadyBannerHtml(data.name) + '</span>' : '<span class="product-ready-banner__name">' + escapeReadyBannerHtml(data.name) + '</span>';
+
+    if (data.downloadHref) {
+        actionsHtml += '<a class="product-ready-banner__action" href="' + escapeReadyBannerHtml(data.downloadHref) + '">下载</a>';
+    }
+    if (data.aboutHref) {
+        actionsHtml += '<a class="product-ready-banner__action" href="' + escapeReadyBannerHtml(data.aboutHref) + '">关于</a>';
     }
 
     injectProductReadyBannerStyle();
@@ -67,7 +166,7 @@ function renderProductReadyBanner(selector, key) {
             '<div class="product-ready-banner__inner">' +
                 '<div class="product-ready-banner__copy">' +
                     '<div class="product-ready-banner__eyebrow">' + escapeReadyBannerHtml(data.status) + '</div>' +
-                    '<p class="product-ready-banner__title">' + escapeReadyBannerHtml(data.brand) + ' <span class="product-ready-banner__name">' + escapeReadyBannerHtml(data.name) + '</span></p>' +
+                    '<p class="product-ready-banner__title">' + titleText + '</p>' +
                     '<div class="product-ready-banner__version">' + escapeReadyBannerHtml(data.version) + '</div>' +
                     '<div class="product-ready-banner__meta">' +
                         '<div class="product-ready-banner__meta-item">' +
@@ -80,8 +179,7 @@ function renderProductReadyBanner(selector, key) {
                     '<img class="product-ready-banner__logo" src="' + escapeReadyBannerHtml(data.logoSrc) + '" alt="' + escapeReadyBannerHtml(data.brand + " " + data.name) + '" />' +
                 '</div>' +
                 '<div class="product-ready-banner__actions">' +
-                    '<a class="product-ready-banner__action" href="' + escapeReadyBannerHtml(data.downloadHref) + '">下载</a>' +
-                    '<a class="product-ready-banner__action" href="' + escapeReadyBannerHtml(data.aboutHref) + '">关于</a>' +
+                    actionsHtml +
                 '</div>' +
             '</div>' +
         '</div>';
