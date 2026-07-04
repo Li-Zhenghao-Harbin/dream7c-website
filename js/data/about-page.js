@@ -21,6 +21,13 @@ var aboutProductItems = [
         tags: ["插件", "2026.01.03"]
     },
     {
+        href: "../pages/dream7c-LQ/index.html",
+        logoSrc: "../images/dream7c LQ logo.png",
+        name: "柒幻 柳琴",
+        description: "柒幻于2026年推出的一款浏览器插件，用于获取和推测页面中的相关股票。",
+        tags: ["插件", "2026.07.04"]
+    },
+    {
         href: "../pages/dream7c-CLR/index.html",
         logoSrc: "../images/dream7c CLR logo.png",
         name: "方块竞技 重制版",

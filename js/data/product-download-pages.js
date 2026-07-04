@@ -86,6 +86,26 @@ var productDownloadPageData = {
             }
         ]
     },
+    LQ: {
+        title: "下载 柒幻 柳琴",
+        platforms: [
+            {
+                tabLabel: "Windows版",
+                downloadTitle: "柒幻 柳琴",
+                version: "beta",
+                supportLabel: "支持浏览器",
+                supportValue: "Chrome",
+                language: "中文(简体)",
+                size: "1.01 MB",
+                updateDate: "2026.07.04",
+                downloadLabel: "下 载",
+                downloadHref: "http://www.dream7c.com/柒幻 柳琴 beta.rar",
+                thanksText: "感谢您使用 柒幻 柳琴",
+                changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
+                    '<p class="tx3b">beta&nbsp;(2026.01.03)</p>*开放测试'
+            }
+        ]
+    },
     DV: {
         title: "下载 柒幻 麦芒",
         platforms: [

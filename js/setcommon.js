@@ -56,6 +56,7 @@ function setMainMenu() {
                             <a href="#" class="menu-mega-section-title" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/plugin.png')}\" width="6%" />&nbsp;插件</a>
                             <ul>
                                 <li><a href=\"${toRoot('pages/dream7c-DU/index.html')}\">柒幻 扬琴</a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-LQ/index.html')}\">柒幻 柳琴</a></li>
                             </ul>
                         </li>
                         <li class="menu-mega-col"><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/command.png')}\" width="6%" />&nbsp;命令</a>
@@ -252,6 +253,20 @@ function setSubMenu() {
                 </div>
             </div>
         `;
+    } else if (key == "LQ") {
+        html = 
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-LQ/index.html')}\"><b style="color:white;">柒幻 柳琴</b></a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-LQ/download.html')}\">下载</a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-LQ/help.html')}\">使用帮助</a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-LQ/about.html')}\">关于 柳琴</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
     } else if (key == "WD") {
         html = 
         `
@@ -293,6 +308,7 @@ function setFooter() {
 						<a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game</a><br/>
                         <p style="color:#88abda;clear:both;font-size:22px;">插件<br/></p>
 						<a href=\"${toRoot('pages/dream7c-DU/index.html')}\">柒幻 扬琴</a><br/>
+						<a href=\"${toRoot('pages/dream7c-LQ/index.html')}\">柒幻 柳琴</a><br/>
 					</div>
 					<div style="float:left;width:24%;">
                         <p style="color:#88abda;clear:both;font-size:22px;">命令<br/></p>

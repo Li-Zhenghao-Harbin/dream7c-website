@@ -32,6 +32,17 @@ var productReadyBannerData = {
         aboutHref: "../../pages/dream7c-DU/about.html",
         accentColor: "#88abda"
     },
+    LQ: {
+        brand: "柒幻",
+        name: "柳琴",
+        version: "beta",
+        date: "2026.07.04",
+        status: "测试版",
+        logoSrc: "../../images/dream7c LQ logo.png",
+        downloadHref: "../../pages/dream7c-LQ/download.html",
+        aboutHref: "../../pages/dream7c-LQ/about.html",
+        accentColor: "#88abda"
+    },
     DV: {
         brand: "柒幻",
         name: "麦芒",

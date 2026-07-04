@@ -39,6 +39,14 @@ var homeProductItems = [
         previewSrc: "images/dream7c FR/dream7c FR ex2.png",
         enabled: true
     },
+    // {
+    //     href: "pages/dream7c-LQ/index.html",
+    //     logoSrc: "images/dream7c LQ logo.png",
+    //     title: "柳琴",
+    //     description: "获取和推测页面中的相关股票",
+    //     previewSrc: "images/dream7c LQ/dream7c LQ ex1.png",
+    //     enabled: true
+    // },
     {
         href: "pages/dream7c-DE/index.html",
         logoSrc: "images/dream7c DE logo.jpg",
