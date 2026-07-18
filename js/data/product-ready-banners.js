@@ -10,6 +10,17 @@ var productReadyBannerData = {
         aboutHref: "../../pages/dream7c-CLR/about.html",
         accentColor: "#88abda"
     },
+    XYHS: {
+        brand: "",
+        name: "新阳美发沙龙",
+        version: "alpha",
+        date: "2026.07.18",
+        status: "测试版",
+        logoSrc: "../../images/dream7c XYHS logo.png",
+        downloadHref: "../../pages/dream7c-XYHS/download.html",
+        aboutHref: "../../pages/dream7c-XYHS/about.html",
+        accentColor: "#88abda"
+    },
     DE: {
         brand: "柒幻",
         name: "寒露",

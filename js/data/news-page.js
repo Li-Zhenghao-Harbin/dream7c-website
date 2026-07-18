@@ -97,28 +97,39 @@ var newsYearItems = [
     {
         id: 8,
         year: "2026",
-        layout: "three-up",
+        // layout: "three-up",
         entries: [
             {
                 href: "../pages/dream7c-DU/index.html",
                 title: "柒幻 扬琴 正式发布",
                 date: "2026.01.20",
                 imageSrc: "../images/dream7c DU logo.png",
-                imageWidth: "60%"
+                imageWidth: "40%",
+                halfWidth: true
             },
             {
                 href: "../pages/dream7c-WD/index.html",
                 title: "柒幻 白露 正式发布",
                 date: "2026.01.20",
                 imageSrc: "../images/dream7c WD logo.png",
-                imageWidth: "60%"
+                imageWidth: "40%",
+                halfWidth: true
             },
             {
                 href: "../pages/dream7c-CLR/index.html",
                 title: "方块竞技 重制版 即将发布",
                 date: "敬请期待",
                 imageSrc: "../images/dream7c CLR logo.png",
-                imageWidth: "60%"
+                imageWidth: "40%",
+                halfWidth: true
+            },
+            {
+                href: "../pages/dream7c-XYHS/index.html",
+                title: "新阳美发沙龙 即将发布",
+                date: "敬请期待",
+                imageSrc: "../images/dream7c XYHS logo.png",
+                imageWidth: "40%",
+                halfWidth: true
             }
         ]
     }

@@ -50,6 +50,7 @@ function setMainMenu() {
                         <li class="menu-mega-col"><a href="#" style="color:#88abda;"><img src=\"${toRoot('images/menu_ico/game.png')}\" width="6%" />&nbsp;游戏</a>
                             <ul>
                                 <li><a href=\"${toRoot('pages/dream7c-CLR/index.html')}\">方块竞技 重制版&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-XYHS/index.html')}\"新阳美发沙龙&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-CL3/index.html')}\">方块竞技3&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                             </ul>
@@ -171,7 +172,20 @@ function setSubMenu() {
                 </div>
             </div>
         `;
-    }  else if (key == "CLR") {
+    } else if (key == "XYHS") {
+        html =
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-XYHS/index.html')}\"><b style="color:white;">新阳美发沙龙</b></a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-XYHS/download.html')}\">下载</a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-XYHS/about.html')}\">关于 新阳美发沙龙</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    } else if (key == "CLR") {
         html =
         `
             <div class="menu-container">
@@ -304,6 +318,7 @@ function setFooter() {
 					<div style="float:left;width:24%;">
                         <p style="color:#88abda;clear:both;font-size:22px;">游戏<br/></p>
 						<a href=\"${toRoot('pages/dream7c-CLR/index.html')}\">方块竞技 重制版</a><br/>
+						<a href=\"${toRoot('pages/dream7c-XYHS/index.html')}\">新阳美发沙龙</a><br/>
 						<a href=\"${toRoot('pages/dream7c-CL3/index.html')}\">方块竞技3</a><br/>
 						<a href=\"${toRoot('pages/research/rehabilitation-game/index.html')}\" target="_blank">Rehabilitation Game</a><br/>
                         <p style="color:#88abda;clear:both;font-size:22px;">插件<br/></p>

@@ -20,6 +20,26 @@ var productDownloadPageData = {
             }
         ]
     },
+    XYHS: {
+        title: "下载 新阳美发沙龙",
+        platforms: [
+            {
+                tabLabel: "Windows版",
+                downloadTitle: "新阳美发沙龙",
+                version: "alpha",
+                supportLabel: "支持系统",
+                supportValue: "Windows",
+                language: "中文(简体)",
+                size: "177 MB",
+                updateDate: "2026.07.18",
+                downloadLabel: "下 载",
+                downloadHref: "https://pan.quark.cn/s/af7be7f5829a",
+                thanksText: "感谢您使用 新阳美发沙龙",
+                changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
+                    '<p class="tx3b">alpha&nbsp;(2026.07.18)</p>*开放测试'
+            }
+        ]
+    },
     DE: {
         title: "下载 柒幻 寒露",
         platforms: [

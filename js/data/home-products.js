@@ -32,6 +32,14 @@ var homeProductItems = [
         enabled: true
     },
     {
+        href: "pages/dream7c-XYHS/index.html",
+        logoSrc: "images/dream7c XYHS logo.png",
+        title: "新阳美发沙龙",
+        description: "理发店模拟经营游戏",
+        previewSrc: "images/dream7c XYHS/dream7c XYHS ex2.png",
+        enabled: true
+    },
+    {
         href: "pages/dream7c-FR/index.html",
         logoSrc: "images/dream7c FR logo.jpg",
         title: "霜降",
@@ -71,14 +79,14 @@ var homeProductItems = [
         previewSrc: "images/dream7c PC/dream7c PC ex1.png",
         enabled: true
     },
-    {
-        href: "pages/dream7c-GG/index.html",
-        logoSrc: "images/dream7c GG logo.jpg",
-        title: "几何精灵",
-        description: "提高对于几何图形和函数的计算效率",
-        previewSrc: "images/dream7c GG/dream7c GG 2020 n1.png",
-        enabled: true
-    }
+    // {
+    //     href: "pages/dream7c-GG/index.html",
+    //     logoSrc: "images/dream7c GG logo.jpg",
+    //     title: "几何精灵",
+    //     description: "提高对于几何图形和函数的计算效率",
+    //     previewSrc: "images/dream7c GG/dream7c GG 2020 n1.png",
+    //     enabled: true
+    // }
 ];
 
 function escapeHtml(text) {
