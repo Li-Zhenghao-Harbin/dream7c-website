@@ -30,10 +30,10 @@ var productDownloadPageData = {
                 supportLabel: "支持系统",
                 supportValue: "Windows",
                 language: "中文(简体)",
-                size: "177 MB",
+                size: "105 MB",
                 updateDate: "2026.07.18",
                 downloadLabel: "下 载",
-                downloadHref: "https://pan.quark.cn/s/af7be7f5829a",
+                downloadHref: "https://pan.quark.cn/s/a390b8d8f50c",
                 thanksText: "感谢您使用 新阳美发沙龙",
                 changelogHtml: '<p class="tx3v">更新内容</p><hr/>' +
                     '<p class="tx3b">alpha&nbsp;(2026.07.18)</p>*开放测试'

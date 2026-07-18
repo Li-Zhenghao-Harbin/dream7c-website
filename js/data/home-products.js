@@ -36,7 +36,7 @@ var homeProductItems = [
         logoSrc: "images/dream7c XYHS logo.png",
         title: "新阳美发沙龙",
         description: "理发店模拟经营游戏",
-        previewSrc: "images/dream7c XYHS/dream7c XYHS ex2.png",
+        previewSrc: "images/dream7c XYHS/dream7c XYHS ex3.png",
         enabled: true
     },
     {
