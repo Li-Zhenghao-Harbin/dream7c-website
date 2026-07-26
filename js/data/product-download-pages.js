@@ -39,16 +39,30 @@ var productDownloadPageData = {
             {
                 tabLabel: "Windows版",
                 downloadTitle: "新阳美发沙龙",
-                version: "alpha",
+                version: "beta",
                 supportLabel: "支持系统",
                 supportValue: "Windows",
                 language: "中文(简体)",
                 size: "105 MB",
-                updateDate: "2026.07.18",
+                updateDate: "2026.07.26",
                 downloadLabel: "下 载",
-                downloadHref: "https://pan.quark.cn/s/a390b8d8f50c",
+                downloadHref: "https://pan.quark.cn/s/4cd24078bd4f",
                 thanksText: "感谢您使用 新阳美发沙龙",
                 changelog: [
+                    {
+                        title: "beta (2026.07.26)",
+                        changes: [
+                            "界面优化",
+                            "调整了店铺声誉机制、店员疲劳值和熟练度机制、通关条件、美发收益等",
+                            "点击店员可使其主动休息或工作",
+                            "添加倒垃圾机制",
+                            "关卡指引优化，且通关后不再显示关卡指引",
+                            "店铺卫生影响顾客进店，且在部分关卡中可能被罚款",
+                            "增加新的关卡，并添加了消毒柜以及有剃须需求顾客",
+                            "修复店员名字可能重复的问题",
+                            "修复储物柜容量问题"
+                        ]
+                    },
                     {
                         title: "alpha (2026.07.18)",
                         changes: [
