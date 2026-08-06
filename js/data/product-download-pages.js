@@ -73,6 +73,41 @@ var productDownloadPageData = {
             }
         ]
     },
+    CL3: {
+        title: "下载 方块竞技3",
+        platforms: [
+            {
+                tabLabel: "Windows版",
+                downloadTitle: "方块竞技3",
+                version: "v 3.0.8",
+                supportLabel: "支持系统",
+                supportValue: "WinAll",
+                language: "中文(简体)",
+                size: "48.1 MB",
+                updateDate: "2019.08.19",
+                downloadLabel: "下 载",
+                downloadHref: "http://www.dream7c.com/方块竞技3.rar",
+                thanksText: "感谢您使用 方块竞技3",
+                changelog: [
+                    {
+                        title: "v 3.0.8 (2019.08.19)",
+                        changes: [
+                            "添加新模式“方块竞技：探索”",
+                            "重新设计“方块竞技：突袭”卡牌样式，用关键字的形式简化卡牌描述并添加更多卡牌",
+                            "修改“方块竞技：突袭”每回合决策时间为60秒",
+                            "修复“方块竞技：突袭”-“激励”卡牌可能出现的失效问题",
+                            "添加更多音乐",
+                            "界面优化"
+                        ]
+                    },
+                    {
+                        title: "历史版本 v 2.1.9 (2019.02.09)",
+                        changes: []
+                    }
+                ]
+            }
+        ]
+    },
     DE: {
         title: "下载 柒幻 寒露",
         platforms: [

@@ -163,6 +163,7 @@ function setSubMenu() {
                 <div class="menu" style="margin-top: 15px;">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-CL3/index.html')}\"><b style="color:white;">方块竞技3</b></a></li>
+                        <li><a href=\"${toRoot('pages/dream7c-CL3/download.html')}\">下载</a></li>
                         <li><a href=\"${toRoot('pages/dream7c-CL3/about.html')}\">关于 方块竞技3</a></li>
                     </ul>
                 </div>

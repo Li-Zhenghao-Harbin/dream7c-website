@@ -21,6 +21,17 @@ var productReadyBannerData = {
         aboutHref: "../../pages/dream7c-XYHS/about.html",
         accentColor: "#88abda"
     },
+    CL3: {
+        brand: "",
+        name: "方块竞技3",
+        version: "v 3.0.8",
+        date: "2019.08.19",
+        status: "更新发布",
+        logoSrc: "../../images/dream7c CL3 logo.jpg",
+        downloadHref: "../../pages/dream7c-CL3/download.html",
+        aboutHref: "../../pages/dream7c-CL3/about.html",
+        accentColor: "#88abda"
+    },
     DE: {
         brand: "柒幻",
         name: "寒露",
