@@ -586,17 +586,22 @@ var productDownloadPageData = {
             {
                 tabLabel: "Windows版",
                 downloadTitle: "柒幻 白露",
-                version: "v 1.1.0",
+                version: "v 1.1.1",
                 supportLabel: "支持系统",
                 supportValue: "WinAll",
                 language: "中文(简体)",
                 size: "351 MB",
-                updateDate: "2026.05.23",
+                updateDate: "2026.08.16",
                 downloadLabel: "下 载",
-                downloadHref: "https://pan.quark.cn/s/345c0ffaefdd",
+                downloadHref: "https://pan.quark.cn/s/a89bd3481766",
                 thanksText: "感谢您使用 柒幻 白露",
                 changelog: [
                     {
+                        title: "v 1.1.1 (2026.08.16)",
+                        changes: [
+                            "修复筛选后可能出现的分页数目错误的问题"
+                        ]
+                    },{
                         title: "v 1.1.0 (2026.05.23)",
                         changes: [
                             "界面优化",

@@ -123,8 +123,8 @@ var productReadyBannerData = {
     WD: {
         brand: "柒幻",
         name: "白露",
-        version: "v 1.1.0",
-        date: "2026.05.23",
+        version: "v 1.1.1",
+        date: "2026.08.16",
         status: "更新发布",
         logoSrc: "../../images/dream7c WD logo.png",
         downloadHref: "../../pages/dream7c-WD/download.html",
