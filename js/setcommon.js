@@ -40,6 +40,7 @@ function setMainMenu() {
                             <ul>
                                 <li><a href=\"${toRoot('pages/dream7c-WD/index.html')}\">柒幻 白露&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-DV/index.html')}\">柒幻 麦芒&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
+                                <li><a href=\"${toRoot('pages/dream7c-GR/index.html')}\">柒幻 芒种&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-FR/index.html')}\">柒幻 霜降&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /><img src=\"${toRoot('images/menu_ico/android.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-DE/index.html')}\">柒幻 寒露&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /><img src=\"${toRoot('images/menu_ico/android.png')}\" width="6%" /></a></li>
                                 <li><a href=\"${toRoot('pages/dream7c-RA/index.html')}\">柒幻 谷雨&nbsp;<img src=\"${toRoot('images/menu_ico/windows.png')}\" width="6%" /></a></li>
@@ -152,6 +153,19 @@ function setSubMenu() {
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-RA/index.html')}\"><b style="color:white;">柒幻 谷雨</b></a></li>
         					<li><a href=\"${toRoot('pages/dream7c-RA/download.html')}\">下载</a></li>
 					        <li><a href=\"${toRoot('pages/dream7c-RA/about.html')}\">关于 谷雨</a></li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    } else if (key == "GR") {
+        html =
+        `
+            <div class="menu-container">
+                <div class="menu" style="margin-top: 15px;">
+                    <ul>
+                        <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-GR/index.html')}\"><b style="color:white;">柒幻 芒种</b></a></li>
+        					<li><a href=\"${toRoot('pages/dream7c-GR/download.html')}\">下载</a></li>
+					        <li><a href=\"${toRoot('pages/dream7c-GR/about.html')}\">关于 芒种</a></li>
                     </ul>
                 </div>
             </div>
@@ -307,6 +321,7 @@ function setFooter() {
 							<p style="color:#88abda;clear:both;font-size:22px;margin:0;margin-bottom:18px;">软件<br/></p>
 							<a href=\"${toRoot('pages/dream7c-WD/index.html')}\">柒幻 白露</a><br/>
 							<a href=\"${toRoot('pages/dream7c-DV/index.html')}\">柒幻 麦芒</a><br/>
+							<a href=\"${toRoot('pages/dream7c-GR/index.html')}\">柒幻 芒种</a><br/>
 							<a href=\"${toRoot('pages/dream7c-FR/index.html')}\">柒幻 霜降</a><br/>
 							<a href=\"${toRoot('pages/dream7c-DE/index.html')}\">柒幻 寒露</a><br/>
 							<a href=\"${toRoot('pages/dream7c-RA/index.html')}\">柒幻 谷雨</a><br/>

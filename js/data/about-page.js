@@ -21,6 +21,13 @@ var aboutProductItems = [
         tags: ["插件", "2026.01.03"]
     },
     {
+        href: "../pages/dream7c-GR/index.html",
+        logoSrc: "../images/dream7c GR logo.png",
+        name: "柒幻 芒种",
+        description: "柒幻于是柒幻于2026年推出的一款族谱软件，用于记录家庭成员信息和血缘关系。",
+        tags: ["软件", "2026.08.26"]
+    },
+    {
         href: "../pages/dream7c-LQ/index.html",
         logoSrc: "../images/dream7c LQ logo.png",
         name: "柒幻 柳琴",

@@ -16,6 +16,14 @@ var homeProductItems = [
         enabled: true
     },
     {
+        href: "pages/dream7c-GR/index.html",
+        logoSrc: "images/dream7c GR logo.png",
+        title: "芒种",
+        description: "用于记录家庭成员信息和血缘关系。",
+        previewSrc: "images/dream7c GR/dream7c GR ex1.png",
+        enabled: true
+    },
+    {
         href: "pages/dream7c-DU/index.html",
         logoSrc: "images/dream7c DU logo.png",
         title: "扬琴",
@@ -71,14 +79,14 @@ var homeProductItems = [
         previewSrc: "images/dream7c RA/dream7c RA ex2.png",
         enabled: true
     },
-    {
-        href: "pages/dream7c-PC/index.html",
-        logoSrc: "images/dream7c PC logo.jpg",
-        title: "千纸鹤",
-        description: "提高对于网页和图片的制作效率",
-        previewSrc: "images/dream7c PC/dream7c PC ex1.png",
-        enabled: true
-    },
+    // {
+    //     href: "pages/dream7c-PC/index.html",
+    //     logoSrc: "images/dream7c PC logo.jpg",
+    //     title: "千纸鹤",
+    //     description: "提高对于网页和图片的制作效率",
+    //     previewSrc: "images/dream7c PC/dream7c PC ex1.png",
+    //     enabled: true
+    // },
     // {
     //     href: "pages/dream7c-GG/index.html",
     //     logoSrc: "images/dream7c GG logo.jpg",

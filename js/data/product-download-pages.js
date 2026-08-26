@@ -280,6 +280,32 @@ var productDownloadPageData = {
             }
         ]
     },
+    GR: {
+        title: "下载 柒幻 芒种",
+        platforms: [
+            {
+                tabLabel: "Windows版",
+                downloadTitle: "柒幻 芒种",
+                version: "alpha",
+                supportLabel: "支持系统",
+                supportValue: "WinAll",
+                language: "中文(简体)",
+                size: "11.2 MB",
+                updateDate: "2026.08.26",
+                downloadLabel: "下 载（Windows版）",
+                downloadHref: "http://www.dream7c.com/柒幻 芒种 alpha.rar",
+                thanksText: "感谢您使用 柒幻 芒种",
+                changelog: [
+                    {
+                        title: "alpha",
+                        changes: [
+                            "开放测试"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
     DV: {
         title: "下载 柒幻 麦芒",
         platforms: [
