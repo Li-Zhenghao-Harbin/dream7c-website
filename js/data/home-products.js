@@ -3,7 +3,7 @@ var homeProductItems = [
         href: "pages/dream7c-WD/index.html",
         logoSrc: "images/dream7c WD logo.png",
         title: "白露",
-        description: "完善对于招聘进度和相关流程的管理",
+        description: "用于招聘进度和相关流程的管理",
         previewSrc: "images/dream7c WD/dream7c WD ex5.png",
         enabled: true
     },
@@ -19,7 +19,7 @@ var homeProductItems = [
         href: "pages/dream7c-GR/index.html",
         logoSrc: "images/dream7c GR logo.png",
         title: "芒种",
-        description: "用于记录家庭成员信息和血缘关系。",
+        description: "用于家庭成员信息和血缘关系",
         previewSrc: "images/dream7c GR/dream7c GR ex1.png",
         enabled: true
     },
@@ -55,14 +55,6 @@ var homeProductItems = [
         previewSrc: "images/dream7c FR/dream7c FR ex2.png",
         enabled: true
     },
-    // {
-    //     href: "pages/dream7c-LQ/index.html",
-    //     logoSrc: "images/dream7c LQ logo.png",
-    //     title: "柳琴",
-    //     description: "获取和推测页面中的相关股票",
-    //     previewSrc: "images/dream7c LQ/dream7c LQ ex1.png",
-    //     enabled: true
-    // },
     {
         href: "pages/dream7c-DE/index.html",
         logoSrc: "images/dream7c DE logo.jpg",

@@ -138,14 +138,6 @@ var newsYearItems = [
                 imageSrc: "../images/dream7c GR logo.png",
                 imageWidth: "40%",
                 halfWidth: true
-            },
-            {
-                href: "../pages/dream7c-LQ/index.html",
-                title: "柒幻 柳琴 即将发布",
-                date: "敬请期待",
-                imageSrc: "../images/dream7c LQ logo.png",
-                imageWidth: "40%",
-                halfWidth: true
             }
         ]
     }
