@@ -292,6 +292,50 @@ function setSubMenu() {
         `;
     }
     menu.innerHTML = html;
+    applySubMenuHighlight(menu);
+}
+
+function getCurrentPageFile() {
+    var fileName = getFileName().split('?')[0];
+    // 目录 URL（无扩展名）视为 index.html
+    if (fileName.indexOf('.') === -1) {
+        fileName = 'index.html';
+    }
+    return fileName.toLowerCase();
+}
+
+// 将 sub_menu 的蓝色高亮从固定的第一项移动到当前页面对应的按钮上
+function applySubMenuHighlight(menu) {
+    var current = getCurrentPageFile();
+    var lis = menu.querySelectorAll('.menu > ul > li');
+    if (!lis.length) {
+        return;
+    }
+    var activeLi = null;
+    for (var i = 0; i < lis.length; i++) {
+        var link = lis[i].querySelector('a');
+        if (!link || !link.getAttribute('href')) {
+            continue;
+        }
+        var file = link.getAttribute('href').split('?')[0];
+        file = file.substring(file.lastIndexOf('/') + 1).toLowerCase();
+        if (file === current) {
+            activeLi = lis[i];
+            break;
+        }
+    }
+    // 当前页不在子菜单中（如已注释的菜单项）时保持原有高亮不变
+    if (!activeLi) {
+        return;
+    }
+    for (var j = 0; j < lis.length; j++) {
+        lis[j].removeAttribute('style');
+        var b = lis[j].querySelector('a b');
+        if (b) {
+            b.removeAttribute('style');
+        }
+    }
+    activeLi.setAttribute('style', 'background-color: #88abda;');
 }
 
 function setFooter() {
