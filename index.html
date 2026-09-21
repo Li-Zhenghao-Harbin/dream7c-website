@@ -11,21 +11,8 @@
 		<link rel="shortcut icon" type="image/x-ico" href="images/web_icon.jpg"/>
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="js/superslide.2.1.js"></script>
 		<script src="js/megamenu.js"></script>
 		<style>
-			/* fullSlide */
-			.fullSlide{width:100%;position:relative;height:450px;}
-			.fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
-			.fullSlide .bd ul{width:100% !important;}
-			.fullSlide .bd li{width:100% !important;height:450px;overflow:hidden;text-align:center;}
-			.fullSlide .bd li a{display:block;height:450px;}
-			.fullSlide .hd{width:100%;position:absolute;z-index:1;bottom:0;left:0;height:30px;line-height:30px;}
-			.fullSlide .hd ul{text-align:center;}
-			.fullSlide .hd ul li{cursor:pointer;display:inline-block;zoom:1;width:42px;height:11px;margin:1px;overflow:hidden;background:#e8e8e8;filter:alpha(opacity=50);opacity:0.5;line-height:999px;}
-			.fullSlide .hd ul .on{background:Black;}
-			.fullSlide .prev,.fullSlide .next{display:block;position:absolute;z-index:1;top:50%;margin-top:-30px;left:15%;z-index:1;width:40px;height:60px;background:url(images/slider-arrow.png) -126px -137px #000 no-repeat;cursor:pointer;filter:alpha(opacity=50);opacity:0.5;display:none;}
-			.fullSlide .next{left:auto;right:15%;background-position:-6px -137px;}
 			.ico{width:20%;float:left;margin-left:10%;}
 			.ico .tx3{ margin: 0;}
 			.ico .tx1{ margin: 0;}
@@ -56,19 +43,7 @@
 	<body>
 		<div class="loading"><div class="pic"></div></div>
 		<div id="main_menu" class="menu-container"></div>
-		<br/>
-		<div class="fullSlide">
-			<div class="bd">
-				<ul>
-					<li><a href="pages/dream7c-WD/index.html"><img src="images/dream7c WD ready.jpg" /></a></li>
-					<li><a href="pages/dream7c-DU/index.html"><img src="images/dream7c DU ready.jpg" /></a></li>
-					<li><a href="pages/dream7c-DV/index.html"><img src="images/dream7c DV ready.jpg" /></a></li>
-				</ul>
-			</div>
-			<div class="hd"><ul></ul></div>
-			<span class="prev"></span>
-			<span class="next"></span>
-		</div>
+		<div id="home_featured"></div>
 		<div style="clear:both;"><br/><br/></div>
 		<div class="home-product-grid">
 			
@@ -98,25 +73,7 @@
 	<script src="js/setcommon.js"></script>
 </html>
 <script>
+	renderHomeFeaturedProduct("#home_featured");
 	renderHomeProductGrid(".home-product-grid");
-	$(".fullSlide").hover(function(){
-		$(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
-	},
-	function(){
-		$(this).find(".prev,.next").fadeOut()
-	});
-	$(".fullSlide").slide({
-		titCell: ".hd ul",
-		mainCell: ".bd ul",
-		effect: "fold",
-		autoPlay: true,
-		autoPage: true,
-		trigger: "click",
-		startFun: function(i) {
-			var curLi = jQuery(".fullSlide .bd li").eq(i);
-			if ( !! curLi.attr("_src")) {
-				curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
-			}
-		}
-	});
+	initHomeFeaturedCarousel();
 </script>
