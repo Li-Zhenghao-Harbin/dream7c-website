@@ -230,15 +230,23 @@ a:hover > div.btn_download {
 .dive {
     float: right;
     width: 100%;
-    background-color: var(--c-muted-bg);
+    background-color: #fff;
+    color: #535353;
     cursor: pointer;
     margin-bottom: 20px;
-    padding: 12px 28px;
+    padding: 15px 28px;
     box-sizing: border-box;
+    font-size: 20px;
     font-weight: 700;
+    text-align: center;
     border-radius: 999px;
     box-shadow: 0 10px 22px rgba(23, 32, 51, 0.20);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.dive .tx3v {
+    color: #535353;
+    margin: 0;
 }
 
 .dive:hover {
@@ -246,9 +254,13 @@ a:hover > div.btn_download {
     box-shadow: 0 14px 28px rgba(23, 32, 51, 0.28);
 }
 
-.dive:hover {
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-hover);
+.dive-active {
+    background-color: #88abda;
+    color: #fff;
+}
+
+.dive-active .tx3v {
+    color: #fff;
 }
 
 .divoc {
