@@ -764,7 +764,7 @@ function buildDownloadPanelHtml(platform) {
 
     if (platform.fallbackLinkHref && platform.fallbackLinkLabel) {
         html += '<a href="' + escapeProductDownloadHtml(platform.fallbackLinkHref) + '" target="_blank">';
-        html += '<p style="background-color: #88abda; text-align: center; padding: 10px; color: whitesmoke">';
+        html += '<p style="background-color: #88abda; text-align: center; padding: 12px 28px; color: whitesmoke; font-weight: 700; border-radius: 999px; box-shadow: 0 10px 22px rgba(23,32,51,0.20);">';
         html += escapeProductDownloadHtml(platform.fallbackLinkLabel);
         html += "</p></a>";
     }
