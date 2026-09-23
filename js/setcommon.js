@@ -58,6 +58,8 @@ function setupMenuScrollBehavior() {
     wrap.appendChild(mainMenu);
     if (hasSubMenu) {
         wrap.appendChild(subMenu);
+        // 供样式判断：有子菜单时取消主菜单底边框，两者连成一块
+        wrap.classList.add("has-sub");
     }
 
     syncMenuSpacer(wrap, spacer);
@@ -307,7 +309,7 @@ function setSubMenu() {
         html = 
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-FR/index.html')}\"><b style="color:white;">柒幻 霜降</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=FR')}\">下载</a></li>
@@ -323,7 +325,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-RA/index.html')}\"><b style="color:white;">柒幻 谷雨</b></a></li>
         					<li><a href=\"${toRoot('pages/product/download.html?product=RA')}\">下载</a></li>
@@ -336,7 +338,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-GR/index.html')}\"><b style="color:white;">柒幻 芒种</b></a></li>
         					<li><a href=\"${toRoot('pages/product/download.html?product=GR')}\">下载</a></li>
@@ -349,7 +351,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-CL3/index.html')}\"><b style="color:white;">方块竞技3</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=CL3')}\">下载</a></li>
@@ -362,7 +364,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-XYHS/index.html')}\"><b style="color:white;">新阳美发沙龙</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=XYHS')}\">下载</a></li>
@@ -375,7 +377,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-CLR/index.html')}\"><b style="color:white;">方块竞技 重制版</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=CLR')}\">下载</a></li>
@@ -388,7 +390,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-PC/index.html')}\"><b style="color:white;">柒幻 千纸鹤</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=PC')}\">下载</a></li>
@@ -402,7 +404,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-GG/index.html')}\"><b style="color:white;">柒幻 几何精灵</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=GG')}\">下载</a></li>
@@ -416,7 +418,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-DE/index.html')}\"><b style="color:white;">柒幻 寒露</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=DE')}\">下载</a></li>
@@ -430,7 +432,7 @@ function setSubMenu() {
         html =
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-DV/index.html')}\"><b style="color:white;">柒幻 麦芒</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=DV')}\">下载</a></li>
@@ -443,7 +445,7 @@ function setSubMenu() {
         html = 
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-DU/index.html')}\"><b style="color:white;">柒幻 扬琴</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=DU')}\">下载</a></li>
@@ -457,7 +459,7 @@ function setSubMenu() {
         html = 
         `
             <div class="menu-container">
-                <div class="menu" style="margin-top: 15px;">
+                <div class="menu">
                     <ul>
                         <li style="background-color: #88abda;"><a href=\"${toRoot('pages/dream7c-WD/index.html')}\"><b style="color:white;">柒幻 白露</b></a></li>
                         <li><a href=\"${toRoot('pages/product/download.html?product=WD')}\">下载</a></li>

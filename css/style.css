@@ -10,6 +10,7 @@
     --c-bg: #fff;
     --c-text: #000;
     --c-muted-bg: #e8e8e8;
+    --c-menu-bg: #eaf2fb;
     --radius-sm: 10px;
     --radius-md: 14px;
     --radius-lg: 18px;
@@ -1089,7 +1090,7 @@ div[style*="background-color: #88abda"] {
 
 /* Top menu bar modernized style only */
 .menu-container {
-    background: rgba(255, 255, 255, 0.94);
+    background: var(--c-menu-bg);
     border-bottom: 1px solid rgba(136, 171, 218, 0.36);
     box-shadow: 0 8px 26px rgba(23, 32, 51, 0.08);
 }
@@ -1121,9 +1122,28 @@ div[style*="background-color: #88abda"] {
     z-index: 2;
 }
 
+/* 有子菜单时（#menu_wrap 带 has-sub，由 setcommon.js 添加）：
+   去掉主菜单的底边框与阴影，让它和紧随其后的子菜单连成一整块 */
+#menu_wrap.has-sub #main_menu.menu-container {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+/* 子菜单配色维持改动前的样子：外层浅灰、内层近白，不跟随主菜单变浅蓝 */
 #sub_menu.menu-container {
     background: rgba(232, 232, 232, 0.86);
     box-shadow: none;
+}
+
+/* 子菜单内部还嵌了一层 .menu-container，同样要还原成改动前的近白色 */
+#sub_menu .menu-container {
+    background: rgba(255, 255, 255, 0.94);
+}
+
+/* 消除主菜单与子菜单之间的缝隙：子菜单内容原本自带 margin-top，
+   会沿祖先链塌陷到 #sub_menu 之外，在两块菜单之间露出一条页面底色的空白 */
+#sub_menu .menu {
+    margin-top: 0 !important;
 }
 
 .menu > ul {
