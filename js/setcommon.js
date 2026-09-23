@@ -1,8 +1,178 @@
-window.onload = new function() {
-    setMainMenu();
-    setSubMenu();
-    setFooter();
-    setPC();
+var menuScrollMounted = false;
+
+// 逐项容错：任何一项失败都不能中断后续挂载（尤其是滚动行为）
+function safeRun(fn) {
+    try {
+        fn();
+    } catch (e) {
+        // 静默：单项失败不影响其余菜单与滚动行为的正常呈现
+    }
+}
+
+function runSetup() {
+    safeRun(setMainMenu);
+    safeRun(setSubMenu);
+    safeRun(setFooter);
+    safeRun(setPC);
+    safeRun(setupMenuScrollBehavior);
+}
+
+function tryMountMenuScroll() {
+    if (menuScrollMounted) {
+        return;
+    }
+    menuScrollMounted = setupMenuScrollBehavior();
+}
+
+// 保持原有执行时机（脚本所在位置同步执行），
+// 并在 DOMContentLoaded / load 各补一次幂等重试，避免时机问题导致漏挂载
+runSetup();
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", tryMountMenuScroll);
+}
+window.addEventListener("load", tryMountMenuScroll);
+
+// 将 main_menu 与 sub_menu（若存在且非空）包进 #menu_wrap，
+// 并绑定滚动行为：下滑隐藏、上滑显示。
+// 返回是否已挂载，供外层做幂等重试。
+function setupMenuScrollBehavior() {
+    if (document.getElementById("menu_wrap")) {
+        return true;
+    }
+    var mainMenu = document.getElementById("main_menu");
+    if (!mainMenu) {
+        return false;
+    }
+    var subMenu = document.getElementById("sub_menu");
+    var hasSubMenu = !!(subMenu && subMenu.innerHTML.replace(/\s/g, "").length > 0);
+
+    var parent = mainMenu.parentNode;
+    var wrap = document.createElement("div");
+    wrap.id = "menu_wrap";
+    var spacer = document.createElement("div");
+    spacer.id = "menu_spacer";
+
+    // 菜单用 fixed 脱离文档流后需要占位块顶住原位置，否则正文会整体上移
+    parent.insertBefore(spacer, mainMenu);
+    parent.insertBefore(wrap, mainMenu);
+    wrap.appendChild(mainMenu);
+    if (hasSubMenu) {
+        wrap.appendChild(subMenu);
+    }
+
+    syncMenuSpacer(wrap, spacer);
+    window.addEventListener("resize", function () {
+        syncMenuSpacer(wrap, spacer);
+    });
+    window.addEventListener("load", function () {
+        syncMenuSpacer(wrap, spacer);
+    });
+
+    bindMenuScrollToggle(wrap);
+    return true;
+}
+
+function syncMenuSpacer(wrap, spacer) {
+    if (!wrap || !spacer) {
+        return;
+    }
+    var h = wrap.offsetHeight || 0;
+    spacer.style.height = h > 0 ? h + "px" : "";
+}
+
+function getScrollTop() {
+    return window.pageYOffset ||
+        (document.documentElement && document.documentElement.scrollTop) ||
+        (document.body && document.body.scrollTop) || 0;
+}
+
+function bindMenuScrollToggle(wrap) {
+    var HIDE_THRESHOLD = 80; // 距顶部该范围内始终显示，避免刚滚动就消失
+    var lastY = getScrollTop();
+
+    function isHidden() {
+        return wrap.classList.contains("menu-hidden");
+    }
+
+    // 只要方向朝上就立刻显示：不设位移阈值。
+    // 平滑滚动/触摸板会把一次滚动拆成多个 1~3px 的小步进事件，
+    // 阈值会导致显示分支永远不触发。
+    function show() {
+        if (isHidden()) {
+            wrap.classList.remove("menu-hidden");
+        }
+    }
+
+    function hide() {
+        if (!isHidden() && getScrollTop() > HIDE_THRESHOLD) {
+            wrap.classList.add("menu-hidden");
+        }
+    }
+
+    function onScroll() {
+        var y = getScrollTop();
+        if (y < lastY) {
+            show();
+        } else if (y > lastY) {
+            hide();
+        }
+        lastY = y;
+    }
+
+    // 1) 窗口滚动（标准场景）
+    window.addEventListener("scroll", onScroll, { passive: true });
+    // 2) document 上的滚动（少数环境 scroll 事件以 document 为目标）
+    document.addEventListener("scroll", onScroll, { passive: true });
+
+    // 3) 祖先滚动容器：页面被包在 overflow:auto/scroll 容器里时，
+    //    window 的 scroll 不会触发，必须直接监听该容器
+    var el = wrap.parentNode;
+    while (el && el.nodeType === 1) {
+        try {
+            var st = window.getComputedStyle ? window.getComputedStyle(el) : null;
+            if (st && (st.overflowY === "auto" || st.overflowY === "scroll") &&
+                el.scrollHeight > el.clientHeight + 4) {
+                el.addEventListener("scroll", onScroll, { passive: true });
+            }
+        } catch (e) {
+            // 单个节点样式探测失败不影响其余监听
+        }
+        el = el.parentNode;
+    }
+
+    // 4) 滚轮：方向明确即响应，完全不依赖滚动位置差值
+    window.addEventListener("wheel", function (e) {
+        if (e.deltaY < 0) {
+            show();
+        } else if (e.deltaY > 0) {
+            hide();
+        }
+    }, { passive: true });
+
+    // 5) 触摸设备
+    var touchY = null;
+    window.addEventListener("touchstart", function (e) {
+        touchY = (e.touches && e.touches.length) ? e.touches[0].clientY : null;
+    }, { passive: true });
+    window.addEventListener("touchmove", function (e) {
+        if (touchY === null || !e.touches || !e.touches.length) {
+            return;
+        }
+        var y = e.touches[0].clientY;
+        if (y > touchY) {
+            show();
+        } else if (y < touchY) {
+            hide();
+        }
+        touchY = y;
+    }, { passive: true });
+
+    // 6) 键盘向上
+    window.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowUp" || e.key === "PageUp" || e.key === "Home") {
+            show();
+        }
+    });
 }
 
 

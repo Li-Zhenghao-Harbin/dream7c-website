@@ -1094,10 +1094,31 @@ div[style*="background-color: #88abda"] {
     box-shadow: 0 8px 26px rgba(23, 32, 51, 0.08);
 }
 
-#main_menu.menu-container {
-    position: sticky;
+/* 菜单滚动行为：#menu_wrap 由 setcommon.js 动态包裹 main_menu 与 sub_menu，
+   下滑隐藏、上滑显示。
+   使用 fixed 而非 sticky：sticky 会被任何祖先的 overflow/contain 破坏，
+   fixed 只受祖先 transform 影响，本页 body 无 transform，更稳。
+   脱流造成的空位由 #menu_spacer 占位填补。 */
+#menu_wrap {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 90;
+    transition: transform 0.25s ease;
+}
+
+#menu_wrap.menu-hidden {
+    transform: translateY(-100%);
+}
+
+#menu_spacer {
+    width: 100%;
+}
+
+#main_menu.menu-container {
+    position: relative;
+    z-index: 2;
 }
 
 #sub_menu.menu-container {
