@@ -173,7 +173,7 @@ function renderHomeFeaturedProduct(selector) {
                     '<h1 class="home-featured-title">' + escapeHtml(product.title) + '</h1>' +
                     '<p class="home-featured-desc">' + escapeHtml(product.description) + '</p>' +
                     '<a class="home-featured-link" href="' + escapeHtml(product.href) + '">' +
-                        escapeHtml(product.linkText) + '&nbsp;&gt;&gt;</a>' +
+                        escapeHtml(product.linkText) + '&nbsp;&rarr;</a>' +
                 '</div>' +
                 '<div class="home-featured-showcase">' +
                     '<div class="home-featured-slide">' +

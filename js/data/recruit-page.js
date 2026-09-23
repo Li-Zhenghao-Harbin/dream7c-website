@@ -11,8 +11,10 @@ var recruitPositions = [
         ],
         requirements: [
             "本科及以上学历，计算机相关专业优先；",
-            "热爱编程，熟悉C#/Java/Go之一，有Windows/Android相关开发经验；",
-            "具有良好的问题判断和解决能力、口头和书面沟通能力、学习能力。"
+            "熟悉C#/Java/Go，有Windows/Android相关开发经验；",
+            "熟悉GDScript，有Godot开发经验；",
+            "熟悉HTML/CSS/JavaScript，有网页开发经验；",
+            "具备良好的沟通和团队协作能力，对新技术保持好奇心。"
         ]
     },
     {
@@ -27,7 +29,7 @@ var recruitPositions = [
         requirements: [
             "本科及以上学历，不限专业；",
             "热爱设计，熟悉Blender等建模软件的使用；",
-            "具有良好的问题判断和解决能力、口头和书面沟通能力、学习能力。"
+            "具备良好的沟通和团队协作能力，对新技术保持好奇心。"
         ]
     }
 ];
