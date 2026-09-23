@@ -6,8 +6,8 @@ var productReadyBannerData = {
         date: "2026.07.01",
         status: "测试版",
         logoSrc: "../../images/dream7c CLR logo.png",
-        downloadHref: "../../pages/dream7c-CLR/download.html",
-        aboutHref: "../../pages/dream7c-CLR/about.html",
+        downloadHref: "../../pages/product/download.html?product=CLR",
+        aboutHref: "../../pages/product/about.html?product=CLR",
         accentColor: "#88abda"
     },
     XYHS: {
@@ -17,8 +17,8 @@ var productReadyBannerData = {
         date: "2026.07.26",
         status: "测试版",
         logoSrc: "../../images/dream7c XYHS logo.png",
-        downloadHref: "../../pages/dream7c-XYHS/download.html",
-        aboutHref: "../../pages/dream7c-XYHS/about.html",
+        downloadHref: "../../pages/product/download.html?product=XYHS",
+        aboutHref: "../../pages/product/about.html?product=XYHS",
         accentColor: "#88abda"
     },
     CL3: {
@@ -28,8 +28,8 @@ var productReadyBannerData = {
         date: "2019.08.19",
         status: "更新发布",
         logoSrc: "../../images/dream7c CL3 logo.jpg",
-        downloadHref: "../../pages/dream7c-CL3/download.html",
-        aboutHref: "../../pages/dream7c-CL3/about.html",
+        downloadHref: "../../pages/product/download.html?product=CL3",
+        aboutHref: "../../pages/product/about.html?product=CL3",
         accentColor: "#88abda"
     },
     DE: {
@@ -39,8 +39,8 @@ var productReadyBannerData = {
         date: "2022.01.25",
         status: "更新发布",
         logoSrc: "../../images/dream7c DE logo.jpg",
-        downloadHref: "../../pages/dream7c-DE/download.html",
-        aboutHref: "../../pages/dream7c-DE/about.html",
+        downloadHref: "../../pages/product/download.html?product=DE",
+        aboutHref: "../../pages/product/about.html?product=DE",
         accentColor: "#88abda"
     },
     DU: {
@@ -50,8 +50,8 @@ var productReadyBannerData = {
         date: "2026.05.23",
         status: "更新发布",
         logoSrc: "../../images/dream7c DU logo.png",
-        downloadHref: "../../pages/dream7c-DU/download.html",
-        aboutHref: "../../pages/dream7c-DU/about.html",
+        downloadHref: "../../pages/product/download.html?product=DU",
+        aboutHref: "../../pages/product/about.html?product=DU",
         accentColor: "#88abda"
     },
     GR: {
@@ -61,8 +61,8 @@ var productReadyBannerData = {
         date: "2026.08.26",
         status: "测试版",
         logoSrc: "../../images/dream7c GR logo.png",
-        downloadHref: "../../pages/dream7c-GR/download.html",
-        aboutHref: "../../pages/dream7c-GR/about.html",
+        downloadHref: "../../pages/product/download.html?product=GR",
+        aboutHref: "../../pages/product/about.html?product=GR",
         accentColor: "#88abda"
     },
     DV: {
@@ -72,8 +72,8 @@ var productReadyBannerData = {
         date: "2025.07.19",
         status: "正式发布",
         logoSrc: "../../images/dream7c DV logo.png",
-        downloadHref: "../../pages/dream7c-DV/download.html",
-        aboutHref: "../../pages/dream7c-DV/about.html",
+        downloadHref: "../../pages/product/download.html?product=DV",
+        aboutHref: "../../pages/product/about.html?product=DV",
         accentColor: "#88abda"
     },
     FR: {
@@ -83,8 +83,8 @@ var productReadyBannerData = {
         date: "2022.12.14",
         status: "更新发布",
         logoSrc: "../../images/dream7c FR logo.jpg",
-        downloadHref: "../../pages/dream7c-FR/download.html",
-        aboutHref: "../../pages/dream7c-FR/about.html",
+        downloadHref: "../../pages/product/download.html?product=FR",
+        aboutHref: "../../pages/product/about.html?product=FR",
         accentColor: "#88abda"
     },
     GG: {
@@ -94,8 +94,8 @@ var productReadyBannerData = {
         date: "2020.12.05",
         status: "更新发布",
         logoSrc: "../../images/dream7c GG logo.jpg",
-        downloadHref: "../../pages/dream7c-GG/download.html",
-        aboutHref: "../../pages/dream7c-GG/about.html",
+        downloadHref: "../../pages/product/download.html?product=GG",
+        aboutHref: "../../pages/product/about.html?product=GG",
         accentColor: "#88abda"
     },
     PC: {
@@ -105,8 +105,8 @@ var productReadyBannerData = {
         date: "2022.12.14",
         status: "更新发布",
         logoSrc: "../../images/dream7c PC logo.jpg",
-        downloadHref: "../../pages/dream7c-PC/download.html",
-        aboutHref: "../../pages/dream7c-PC/about.html",
+        downloadHref: "../../pages/product/download.html?product=PC",
+        aboutHref: "../../pages/product/about.html?product=PC",
         accentColor: "#88abda"
     },
     RA: {
@@ -116,8 +116,8 @@ var productReadyBannerData = {
         date: "2023.01.31",
         status: "更新发布",
         logoSrc: "../../images/dream7c RA logo.jpg",
-        downloadHref: "../../pages/dream7c-RA/download.html",
-        aboutHref: "../../pages/dream7c-RA/about.html",
+        downloadHref: "../../pages/product/download.html?product=RA",
+        aboutHref: "../../pages/product/about.html?product=RA",
         accentColor: "#88abda"
     },
     WD: {
@@ -127,8 +127,8 @@ var productReadyBannerData = {
         date: "2026.08.16",
         status: "更新发布",
         logoSrc: "../../images/dream7c WD logo.png",
-        downloadHref: "../../pages/dream7c-WD/download.html",
-        aboutHref: "../../pages/dream7c-WD/about.html",
+        downloadHref: "../../pages/product/download.html?product=WD",
+        aboutHref: "../../pages/product/about.html?product=WD",
         accentColor: "#88abda"
     }
 };

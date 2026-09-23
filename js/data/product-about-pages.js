@@ -285,8 +285,14 @@ function escapeProductAboutHtml(text) {
 }
 
 function getCurrentProductAboutKey() {
+    var match = window.location.search.match(/[?&]product=([A-Za-z0-9]+)/i);
+
+    if (match) {
+        return match[1].toUpperCase();
+    }
+
     var path = window.location.pathname.replace(/\\/g, "/");
-    var match = path.match(/\/pages\/dream7c-([A-Za-z0-9]+)\//i);
+    match = path.match(/\/pages\/dream7c-([A-Za-z0-9]+)\//i);
     return match ? match[1].toUpperCase() : "";
 }
 
