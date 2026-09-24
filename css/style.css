@@ -705,6 +705,55 @@ a:hover .ico {
     box-shadow: 0 14px 28px rgba(23, 32, 51, 0.28);
 }
 
+/* 首页「关于 柒幻工作室」模块：与上方信息卡同一套内边距与文字节奏（配色不变） */
+.home-about-panel {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin: 0 2%;
+    padding: 2%;
+    background-color: #88abda;
+    border-radius: 0;
+}
+
+.home-about-info {
+    flex: 1 1 auto;
+    min-width: 0;
+    /* 与 .home-info-card 一致用纵向 flex，段落外边距不塌陷，文字间距才和卡片相同 */
+    display: flex;
+    flex-direction: column;
+}
+
+.home-about-panel .tx2,
+.home-about-panel .tx3 {
+    color: #fff;
+}
+
+.home-about-action {
+    flex: 0 0 auto;
+}
+
+/* 白底蓝字胶囊：与 .btn_blue 同规格，同样带 hover 上浮 */
+.btn_white {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #fff;
+    color: var(--c-primary);
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 999px;
+    box-shadow: 0 10px 22px rgba(23, 32, 51, 0.20);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn_white:hover,
+a:hover > .btn_white {
+    color: var(--c-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(23, 32, 51, 0.28);
+}
+
 .home-featured-showcase {
     flex: 1 1 auto;
     min-width: 0;
@@ -1137,6 +1186,12 @@ div[style*="background-color: #88abda"] {
     /* 窄屏两块信息卡改为上下堆叠，避免左右挤压 */
     .home-info-row {
         flex-direction: column;
+        gap: 14px;
+    }
+
+    .home-about-panel {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 14px;
     }
 }
