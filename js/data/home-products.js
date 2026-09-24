@@ -44,7 +44,7 @@ var homeProductItems = [
         href: "pages/dream7c-GR/index.html",
         logoSrc: "images/dream7c GR logo.png",
         title: "芒种",
-        description: "用于家庭成员信息和血缘关系",
+        description: "家庭成员信息和血缘关系管理",
         previewSrc: "images/dream7c GR/dream7c GR ex1.png",
         enabled: true
     },
